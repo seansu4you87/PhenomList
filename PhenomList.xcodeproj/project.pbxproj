@@ -18,6 +18,9 @@
 		BDE62BB114A273F9003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
 		BDE62BB914A273F9003423CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDE62BB714A273F9003423CA /* InfoPlist.strings */; };
 		BDE62BBC14A273F9003423CA /* PhenomListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BBB14A273F9003423CA /* PhenomListTests.m */; };
+		BDE62BCA14A27451003423CA /* PLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BC914A27451003423CA /* PLObject.m */; };
+		BDE62BCD14A27477003423CA /* PLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCC14A27477003423CA /* PLCategory.m */; };
+		BDE62BD014A274AC003423CA /* PLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCF14A274AC003423CA /* PLPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,24 @@
 		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BDE62B9A14A273F8003423CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BDE62B9E14A273F8003423CA /* PhenomList-Info.plist */ = {isa = PBXFileReference; path = "PhenomList-Info.plist"; sourceTree = "<group>"; };
+		BDE62B9E14A273F8003423CA /* PhenomList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhenomList-Info.plist"; sourceTree = "<group>"; };
 		BDE62BA014A273F8003423CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDE62BA214A273F8003423CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BDE62BA414A273F8003423CA /* PhenomList-Prefix.pch */ = {isa = PBXFileReference; path = "PhenomList-Prefix.pch"; sourceTree = "<group>"; };
-		BDE62BA514A273F8003423CA /* PLAppDelegate.h */ = {isa = PBXFileReference; path = PLAppDelegate.h; sourceTree = "<group>"; };
+		BDE62BA414A273F8003423CA /* PhenomList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhenomList-Prefix.pch"; sourceTree = "<group>"; };
+		BDE62BA514A273F8003423CA /* PLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAppDelegate.h; sourceTree = "<group>"; };
 		BDE62BA614A273F8003423CA /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
 		BDE62BAD14A273F9003423CA /* PhenomListTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhenomListTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE62BAE14A273F9003423CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BDE62BB614A273F9003423CA /* PhenomListTests-Info.plist */ = {isa = PBXFileReference; path = "PhenomListTests-Info.plist"; sourceTree = "<group>"; };
+		BDE62BB614A273F9003423CA /* PhenomListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhenomListTests-Info.plist"; sourceTree = "<group>"; };
 		BDE62BB814A273F9003423CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BDE62BBA14A273F9003423CA /* PhenomListTests.h */ = {isa = PBXFileReference; path = PhenomListTests.h; sourceTree = "<group>"; };
+		BDE62BBA14A273F9003423CA /* PhenomListTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhenomListTests.h; sourceTree = "<group>"; };
 		BDE62BBB14A273F9003423CA /* PhenomListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhenomListTests.m; sourceTree = "<group>"; };
+		BDE62BC814A27451003423CA /* PLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLObject.h; path = Model/PLObject.h; sourceTree = "<group>"; };
+		BDE62BC914A27451003423CA /* PLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLObject.m; path = Model/PLObject.m; sourceTree = "<group>"; };
+		BDE62BCB14A27477003423CA /* PLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCategory.h; path = Model/PLCategory.h; sourceTree = "<group>"; };
+		BDE62BCC14A27477003423CA /* PLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCategory.m; path = Model/PLCategory.m; sourceTree = "<group>"; };
+		BDE62BCE14A274AC003423CA /* PLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPerson.h; path = Model/PLPerson.h; sourceTree = "<group>"; };
+		BDE62BCF14A274AC003423CA /* PLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPerson.m; path = Model/PLPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,9 @@
 		BDE62B9C14A273F8003423CA /* PhenomList */ = {
 			isa = PBXGroup;
 			children = (
+				BDE62BC514A2741C003423CA /* Model */,
+				BDE62BC714A2742A003423CA /* View */,
+				BDE62BC614A27426003423CA /* Controller */,
 				BDE62BA514A273F8003423CA /* PLAppDelegate.h */,
 				BDE62BA614A273F8003423CA /* PLAppDelegate.m */,
 				BDE62B9D14A273F8003423CA /* Supporting Files */,
@@ -141,6 +153,33 @@
 				BDE62BB714A273F9003423CA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDE62BC514A2741C003423CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62BC814A27451003423CA /* PLObject.h */,
+				BDE62BC914A27451003423CA /* PLObject.m */,
+				BDE62BCB14A27477003423CA /* PLCategory.h */,
+				BDE62BCC14A27477003423CA /* PLCategory.m */,
+				BDE62BCE14A274AC003423CA /* PLPerson.h */,
+				BDE62BCF14A274AC003423CA /* PLPerson.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BDE62BC614A27426003423CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BDE62BC714A2742A003423CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +290,9 @@
 			files = (
 				BDE62BA314A273F8003423CA /* main.m in Sources */,
 				BDE62BA714A273F8003423CA /* PLAppDelegate.m in Sources */,
+				BDE62BCA14A27451003423CA /* PLObject.m in Sources */,
+				BDE62BCD14A27477003423CA /* PLCategory.m in Sources */,
+				BDE62BD014A274AC003423CA /* PLPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
