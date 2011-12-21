@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
+		BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
+		BDE62B9B14A273F8003423CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9A14A273F8003423CA /* CoreGraphics.framework */; };
+		BDE62BA114A273F8003423CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDE62B9F14A273F8003423CA /* InfoPlist.strings */; };
+		BDE62BA314A273F8003423CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BA214A273F8003423CA /* main.m */; };
+		BDE62BA714A273F8003423CA /* PLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BA614A273F8003423CA /* PLAppDelegate.m */; };
+		BDE62BAF14A273F9003423CA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62BAE14A273F9003423CA /* SenTestingKit.framework */; };
+		BDE62BB014A273F9003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
+		BDE62BB114A273F9003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
+		BDE62BB914A273F9003423CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDE62BB714A273F9003423CA /* InfoPlist.strings */; };
+		BDE62BBC14A273F9003423CA /* PhenomListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BBB14A273F9003423CA /* PhenomListTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDE62BB214A273F9003423CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDE62B8914A273F8003423CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE62B9114A273F8003423CA;
+			remoteInfo = PhenomList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BDE62B9A14A273F8003423CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDE62B9E14A273F8003423CA /* PhenomList-Info.plist */ = {isa = PBXFileReference; path = "PhenomList-Info.plist"; sourceTree = "<group>"; };
+		BDE62BA014A273F8003423CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BDE62BA214A273F8003423CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDE62BA414A273F8003423CA /* PhenomList-Prefix.pch */ = {isa = PBXFileReference; path = "PhenomList-Prefix.pch"; sourceTree = "<group>"; };
+		BDE62BA514A273F8003423CA /* PLAppDelegate.h */ = {isa = PBXFileReference; path = PLAppDelegate.h; sourceTree = "<group>"; };
+		BDE62BA614A273F8003423CA /* PLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAppDelegate.m; sourceTree = "<group>"; };
+		BDE62BAD14A273F9003423CA /* PhenomListTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhenomListTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE62BAE14A273F9003423CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BDE62BB614A273F9003423CA /* PhenomListTests-Info.plist */ = {isa = PBXFileReference; path = "PhenomListTests-Info.plist"; sourceTree = "<group>"; };
+		BDE62BB814A273F9003423CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BDE62BBA14A273F9003423CA /* PhenomListTests.h */ = {isa = PBXFileReference; path = PhenomListTests.h; sourceTree = "<group>"; };
+		BDE62BBB14A273F9003423CA /* PhenomListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhenomListTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDE62B8F14A273F8003423CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */,
+				BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */,
+				BDE62B9B14A273F8003423CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE62BA914A273F9003423CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62BAF14A273F9003423CA /* SenTestingKit.framework in Frameworks */,
+				BDE62BB014A273F9003423CA /* UIKit.framework in Frameworks */,
+				BDE62BB114A273F9003423CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDE62B8714A273F8003423CA = {
+			isa = PBXGroup;
+			children = (
+				BDE62B9C14A273F8003423CA /* PhenomList */,
+				BDE62BB414A273F9003423CA /* PhenomListTests */,
+				BDE62B9514A273F8003423CA /* Frameworks */,
+				BDE62B9314A273F8003423CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDE62B9314A273F8003423CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62B9214A273F8003423CA /* PhenomList.app */,
+				BDE62BAD14A273F9003423CA /* PhenomListTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDE62B9514A273F8003423CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62B9614A273F8003423CA /* UIKit.framework */,
+				BDE62B9814A273F8003423CA /* Foundation.framework */,
+				BDE62B9A14A273F8003423CA /* CoreGraphics.framework */,
+				BDE62BAE14A273F9003423CA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDE62B9C14A273F8003423CA /* PhenomList */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62BA514A273F8003423CA /* PLAppDelegate.h */,
+				BDE62BA614A273F8003423CA /* PLAppDelegate.m */,
+				BDE62B9D14A273F8003423CA /* Supporting Files */,
+			);
+			path = PhenomList;
+			sourceTree = "<group>";
+		};
+		BDE62B9D14A273F8003423CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62B9E14A273F8003423CA /* PhenomList-Info.plist */,
+				BDE62B9F14A273F8003423CA /* InfoPlist.strings */,
+				BDE62BA214A273F8003423CA /* main.m */,
+				BDE62BA414A273F8003423CA /* PhenomList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDE62BB414A273F9003423CA /* PhenomListTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62BBA14A273F9003423CA /* PhenomListTests.h */,
+				BDE62BBB14A273F9003423CA /* PhenomListTests.m */,
+				BDE62BB514A273F9003423CA /* Supporting Files */,
+			);
+			path = PhenomListTests;
+			sourceTree = "<group>";
+		};
+		BDE62BB514A273F9003423CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE62BB614A273F9003423CA /* PhenomListTests-Info.plist */,
+				BDE62BB714A273F9003423CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDE62B9114A273F8003423CA /* PhenomList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE62BBF14A273F9003423CA /* Build configuration list for PBXNativeTarget "PhenomList" */;
+			buildPhases = (
+				BDE62B8E14A273F8003423CA /* Sources */,
+				BDE62B8F14A273F8003423CA /* Frameworks */,
+				BDE62B9014A273F8003423CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhenomList;
+			productName = PhenomList;
+			productReference = BDE62B9214A273F8003423CA /* PhenomList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDE62BAC14A273F9003423CA /* PhenomListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE62BC214A273F9003423CA /* Build configuration list for PBXNativeTarget "PhenomListTests" */;
+			buildPhases = (
+				BDE62BA814A273F9003423CA /* Sources */,
+				BDE62BA914A273F9003423CA /* Frameworks */,
+				BDE62BAA14A273F9003423CA /* Resources */,
+				BDE62BAB14A273F9003423CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDE62BB314A273F9003423CA /* PBXTargetDependency */,
+			);
+			name = PhenomListTests;
+			productName = PhenomListTests;
+			productReference = BDE62BAD14A273F9003423CA /* PhenomListTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDE62B8914A273F8003423CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Blackboard Mobile";
+			};
+			buildConfigurationList = BDE62B8C14A273F8003423CA /* Build configuration list for PBXProject "PhenomList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDE62B8714A273F8003423CA;
+			productRefGroup = BDE62B9314A273F8003423CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDE62B9114A273F8003423CA /* PhenomList */,
+				BDE62BAC14A273F9003423CA /* PhenomListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE62B9014A273F8003423CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62BA114A273F8003423CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE62BAA14A273F9003423CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62BB914A273F9003423CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDE62BAB14A273F9003423CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDE62B8E14A273F8003423CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62BA314A273F8003423CA /* main.m in Sources */,
+				BDE62BA714A273F8003423CA /* PLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE62BA814A273F9003423CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE62BBC14A273F9003423CA /* PhenomListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDE62BB314A273F9003423CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDE62B9114A273F8003423CA /* PhenomList */;
+			targetProxy = BDE62BB214A273F9003423CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDE62B9F14A273F8003423CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE62BA014A273F8003423CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BDE62BB714A273F9003423CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE62BB814A273F9003423CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDE62BBD14A273F9003423CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDE62BBE14A273F9003423CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDE62BC014A273F9003423CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhenomList/PhenomList-Prefix.pch";
+				INFOPLIST_FILE = "PhenomList/PhenomList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BDE62BC114A273F9003423CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhenomList/PhenomList-Prefix.pch";
+				INFOPLIST_FILE = "PhenomList/PhenomList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BDE62BC314A273F9003423CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhenomList.app/PhenomList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhenomList/PhenomList-Prefix.pch";
+				INFOPLIST_FILE = "PhenomListTests/PhenomListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BDE62BC414A273F9003423CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhenomList.app/PhenomList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhenomList/PhenomList-Prefix.pch";
+				INFOPLIST_FILE = "PhenomListTests/PhenomListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDE62B8C14A273F8003423CA /* Build configuration list for PBXProject "PhenomList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE62BBD14A273F9003423CA /* Debug */,
+				BDE62BBE14A273F9003423CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE62BBF14A273F9003423CA /* Build configuration list for PBXNativeTarget "PhenomList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE62BC014A273F9003423CA /* Debug */,
+				BDE62BC114A273F9003423CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDE62BC214A273F9003423CA /* Build configuration list for PBXNativeTarget "PhenomListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE62BC314A273F9003423CA /* Debug */,
+				BDE62BC414A273F9003423CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDE62B8914A273F8003423CA /* Project object */;
+}
