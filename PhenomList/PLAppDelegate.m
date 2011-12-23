@@ -8,8 +8,7 @@
 
 #import "PLAppDelegate.h"
 
-#import "PLRequest.h"
-#import "PLURL.h"
+#import "PLListsController.h"
 
 @implementation PLAppDelegate
 
@@ -21,9 +20,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-	
-	PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL]];
-	[request performRequestWithSuccessBlock:nil andFailureBlock:nil];
+    
+    PLListsController *listController = [[PLListsController alloc] init];
+    
+    [self.window addSubview:[[UINavigationController alloc] initWithRootViewController:listController].view];
 	
     return YES;
 }

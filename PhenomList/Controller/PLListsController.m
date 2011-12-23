@@ -7,7 +7,29 @@
 //
 
 #import "PLListsController.h"
+#import "PLRequest.h"
+#import "PLURL.h"
 
 @implementation PLListsController
+
+- (id)init
+{
+    if (self = [super init])
+    {
+        self.title = @"PhenomList";
+        
+        PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL]];
+        [request performRequestWithSuccessBlock:^(id result){
+            
+            
+            
+        }andFailureBlock:^(NSError *error){
+            
+            
+            
+        }];
+    }
+    return self;
+}
 
 @end

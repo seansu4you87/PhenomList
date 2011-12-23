@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PLDataState.h"
 
 @interface PLTableViewController : UITableViewController
 {
-    
+    PLDataState     data_state;
 }
 
 #pragma mark - 

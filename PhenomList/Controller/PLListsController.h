@@ -9,5 +9,8 @@
 #import "PLTableViewController.h"
 
 @interface PLListsController : PLTableViewController
+{
+    
+}
 
 @end
