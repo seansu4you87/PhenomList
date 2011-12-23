@@ -6,8 +6,8 @@
 //  Copyright (c) 2011 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLCategory.h"
+#import "PLList.h"
 
-@implementation PLCategory
+@implementation PLList
 
 @end

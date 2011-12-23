@@ -8,7 +8,7 @@
 
 #import "PLObject.h"
 
-@interface PLCategory : PLObject
+@interface PLList : PLObject
 {
     
 }

@@ -20,7 +20,7 @@
 		BDE62BB914A273F9003423CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDE62BB714A273F9003423CA /* InfoPlist.strings */; };
 		BDE62BBC14A273F9003423CA /* PhenomListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BBB14A273F9003423CA /* PhenomListTests.m */; };
 		BDE62BCA14A27451003423CA /* PLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BC914A27451003423CA /* PLObject.m */; };
-		BDE62BCD14A27477003423CA /* PLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCC14A27477003423CA /* PLCategory.m */; };
+		BDE62BCD14A27477003423CA /* PLList.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCC14A27477003423CA /* PLList.m */; };
 		BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCF14A274AC003423CA /* PLPhenom.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +55,8 @@
 		BDE62BBB14A273F9003423CA /* PhenomListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhenomListTests.m; sourceTree = "<group>"; };
 		BDE62BC814A27451003423CA /* PLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLObject.h; path = Model/PLObject.h; sourceTree = "<group>"; };
 		BDE62BC914A27451003423CA /* PLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLObject.m; path = Model/PLObject.m; sourceTree = "<group>"; };
-		BDE62BCB14A27477003423CA /* PLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCategory.h; path = Model/PLCategory.h; sourceTree = "<group>"; };
-		BDE62BCC14A27477003423CA /* PLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCategory.m; path = Model/PLCategory.m; sourceTree = "<group>"; };
+		BDE62BCB14A27477003423CA /* PLList.h */ = {isa = PBXFileReference; fileEncoding = 4; name = PLList.h; path = Model/PLList.h; sourceTree = "<group>"; };
+		BDE62BCC14A27477003423CA /* PLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLList.m; path = Model/PLList.m; sourceTree = "<group>"; };
 		BDE62BCE14A274AC003423CA /* PLPhenom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPhenom.h; path = Model/PLPhenom.h; sourceTree = "<group>"; };
 		BDE62BCF14A274AC003423CA /* PLPhenom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPhenom.m; path = Model/PLPhenom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,8 +163,8 @@
 			children = (
 				BDE62BC814A27451003423CA /* PLObject.h */,
 				BDE62BC914A27451003423CA /* PLObject.m */,
-				BDE62BCB14A27477003423CA /* PLCategory.h */,
-				BDE62BCC14A27477003423CA /* PLCategory.m */,
+				BDE62BCB14A27477003423CA /* PLList.h */,
+				BDE62BCC14A27477003423CA /* PLList.m */,
 				BDE62BCE14A274AC003423CA /* PLPhenom.h */,
 				BDE62BCF14A274AC003423CA /* PLPhenom.m */,
 				AC0ED36614A4870B0095CD09 /* PLURL.h */,
@@ -296,7 +296,7 @@
 				BDE62BA314A273F8003423CA /* main.m in Sources */,
 				BDE62BA714A273F8003423CA /* PLAppDelegate.m in Sources */,
 				BDE62BCA14A27451003423CA /* PLObject.m in Sources */,
-				BDE62BCD14A27477003423CA /* PLCategory.m in Sources */,
+				BDE62BCD14A27477003423CA /* PLList.m in Sources */,
 				BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */,
 				AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */,
 			);
