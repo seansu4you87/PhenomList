@@ -20,7 +20,7 @@
 		BDE62BBC14A273F9003423CA /* PhenomListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BBB14A273F9003423CA /* PhenomListTests.m */; };
 		BDE62BCA14A27451003423CA /* PLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BC914A27451003423CA /* PLObject.m */; };
 		BDE62BCD14A27477003423CA /* PLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCC14A27477003423CA /* PLCategory.m */; };
-		BDE62BD014A274AC003423CA /* PLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCF14A274AC003423CA /* PLPerson.m */; };
+		BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE62BCF14A274AC003423CA /* PLPhenom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		BDE62BC914A27451003423CA /* PLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLObject.m; path = Model/PLObject.m; sourceTree = "<group>"; };
 		BDE62BCB14A27477003423CA /* PLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCategory.h; path = Model/PLCategory.h; sourceTree = "<group>"; };
 		BDE62BCC14A27477003423CA /* PLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCategory.m; path = Model/PLCategory.m; sourceTree = "<group>"; };
-		BDE62BCE14A274AC003423CA /* PLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPerson.h; path = Model/PLPerson.h; sourceTree = "<group>"; };
-		BDE62BCF14A274AC003423CA /* PLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPerson.m; path = Model/PLPerson.m; sourceTree = "<group>"; };
+		BDE62BCE14A274AC003423CA /* PLPhenom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPhenom.h; path = Model/PLPhenom.h; sourceTree = "<group>"; };
+		BDE62BCF14A274AC003423CA /* PLPhenom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPhenom.m; path = Model/PLPhenom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 				BDE62BC914A27451003423CA /* PLObject.m */,
 				BDE62BCB14A27477003423CA /* PLCategory.h */,
 				BDE62BCC14A27477003423CA /* PLCategory.m */,
-				BDE62BCE14A274AC003423CA /* PLPerson.h */,
-				BDE62BCF14A274AC003423CA /* PLPerson.m */,
+				BDE62BCE14A274AC003423CA /* PLPhenom.h */,
+				BDE62BCF14A274AC003423CA /* PLPhenom.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				BDE62BA714A273F8003423CA /* PLAppDelegate.m in Sources */,
 				BDE62BCA14A27451003423CA /* PLObject.m in Sources */,
 				BDE62BCD14A27477003423CA /* PLCategory.m in Sources */,
-				BDE62BD014A274AC003423CA /* PLPerson.m in Sources */,
+				BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +456,7 @@
 				BDE62BC114A273F9003423CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDE62BC214A273F9003423CA /* Build configuration list for PBXNativeTarget "PhenomListTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				BDE62BC414A273F9003423CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
