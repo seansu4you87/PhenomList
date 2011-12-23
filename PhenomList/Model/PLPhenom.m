@@ -10,4 +10,6 @@
 
 @implementation PLPhenom
 
+@synthesize date, name, lead, content, imageURL = image_url, videoURL = video_url, stats, votes;
+
 @end

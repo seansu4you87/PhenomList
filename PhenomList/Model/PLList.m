@@ -10,4 +10,6 @@
 
 @implementation PLList
 
+@synthesize dateCreated = date_created, dateUpdated = date_updated, title, summary, phenoms;
+
 @end

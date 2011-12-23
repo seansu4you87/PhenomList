@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface PLObject : NSObject
+{
+	NSString *ID;
+}
+
+@property(nonatomic, retain) NSString *ID;
 
 @end
