@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
 		ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFE114A48E6A004F914E /* PLRequest.m */; };
+		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
+		BD33712A14A51E6900407496 /* PLListsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListsController.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
 		BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
 		BDE62B9B14A273F8003423CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9A14A273F8003423CA /* CoreGraphics.framework */; };
@@ -40,6 +42,10 @@
 		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
 		ACD0CFE014A48E6A004F914E /* PLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLRequest.h; path = Model/PLRequest.h; sourceTree = "<group>"; };
 		ACD0CFE114A48E6A004F914E /* PLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLRequest.m; path = Model/PLRequest.m; sourceTree = "<group>"; };
+		BD33712414A5186B00407496 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableViewController.h; path = Controller/PLTableViewController.h; sourceTree = "<group>"; };
+		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
+		BD33712814A51E6900407496 /* PLListsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListsController.h; path = Controller/PLListsController.h; sourceTree = "<group>"; };
+		BD33712914A51E6900407496 /* PLListsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListsController.m; path = Controller/PLListsController.m; sourceTree = "<group>"; };
 		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +187,10 @@
 		BDE62BC614A27426003423CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD33712414A5186B00407496 /* PLTableViewController.h */,
+				BD33712514A5186B00407496 /* PLTableViewController.m */,
+				BD33712814A51E6900407496 /* PLListsController.h */,
+				BD33712914A51E6900407496 /* PLListsController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -305,6 +315,8 @@
 				BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */,
 				AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */,
 				ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */,
+				BD33712614A5186B00407496 /* PLTableViewController.m in Sources */,
+				BD33712A14A51E6900407496 /* PLListsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
