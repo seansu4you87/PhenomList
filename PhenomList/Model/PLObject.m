@@ -10,4 +10,6 @@
 
 @implementation PLObject
 
+@synthesize ID;
+
 @end

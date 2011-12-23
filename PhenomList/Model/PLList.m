@@ -6,8 +6,10 @@
 //  Copyright (c) 2011 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLCategory.h"
+#import "PLList.h"
 
-@implementation PLCategory
+@implementation PLList
+
+@synthesize dateCreated = date_created, dateUpdated = date_updated, title, summary, phenoms;
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation PLURL
 
++ (PLURL *)listsURL
+{
+	return [NSURL URLWithString:@"http://phenomlist.com/api/lists"];
+}
+
++ (PLURL *)listDetailURLForListID:(NSString *)listID
+{
+	return [NSURL URLWithString:[NSString stringWithFormat:@"http://phenomlist.com/api/list/%@", listID]];
+}
+
 @end
