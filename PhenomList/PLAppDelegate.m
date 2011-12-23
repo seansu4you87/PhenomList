@@ -8,6 +8,9 @@
 
 #import "PLAppDelegate.h"
 
+#import "PLRequest.h"
+#import "PLURL.h"
+
 @implementation PLAppDelegate
 
 @synthesize window = _window;
@@ -18,6 +21,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	
+	PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL]];
+	[request performRequestWithSuccessBlock:nil andFailureBlock:nil];
+	
     return YES;
 }
 
