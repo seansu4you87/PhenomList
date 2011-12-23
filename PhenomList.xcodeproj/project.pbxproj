@@ -46,7 +46,6 @@
 		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
 		BD33712814A51E6900407496 /* PLListsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListsController.h; path = Controller/PLListsController.h; sourceTree = "<group>"; };
 		BD33712914A51E6900407496 /* PLListsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListsController.m; path = Controller/PLListsController.m; sourceTree = "<group>"; };
-		BD33712B14A5211F00407496 /* PLDataState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLDataState.h; path = Model/PLDataState.h; sourceTree = "<group>"; };
 		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,7 +180,6 @@
 				AC0ED36714A4870B0095CD09 /* PLURL.m */,
 				ACD0CFE014A48E6A004F914E /* PLRequest.h */,
 				ACD0CFE114A48E6A004F914E /* PLRequest.m */,
-				BD33712B14A5211F00407496 /* PLDataState.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

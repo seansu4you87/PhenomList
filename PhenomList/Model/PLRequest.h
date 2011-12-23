@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+    PLDataStateNoResults,
+    PLDataStateHasData,
+    PLDataStateLoading
+} PLDataState;
+
 typedef void (^PLRequestSuccessBlock)(id); 
 typedef void (^PLRequestFailureBlock)(NSError *); 
 
@@ -16,8 +23,8 @@ typedef void (^PLRequestFailureBlock)(NSError *);
 @interface PLRequest : NSObject
 {
 	NSURLConnection			*url_connection;
-	NSMutableURLRequest	*url_request;
-	NSMutableData				*data;
+	NSMutableURLRequest     *url_request;
+	NSMutableData			*data;
 	PLRequestSuccessBlock	success_block;
 	PLRequestFailureBlock	failure_block;
 }

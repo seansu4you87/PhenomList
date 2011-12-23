@@ -7,18 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PLDataState.h"
+#import "PLRequest.h"
 
 @interface PLTableViewController : UITableViewController
 {
     PLDataState     data_state;
 }
 
+@property(nonatomic, assign) PLDataState dataState;
+
 #pragma mark - 
 #pragma mark Has Data Methods
 
 - (NSInteger)numberOfDataSections;
-- (NSInteger)NumberOfDataRowsInSection:(NSInteger)section;
+- (NSInteger)numberOfDataRowsInSection:(NSInteger)section;
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath;
 
@@ -26,7 +28,7 @@
 #pragma mark No Results Methods
 
 - (NSInteger)numberOfNoResultsSections;
-- (NSInteger)NumberOfNoResultsRowsInSection:(NSInteger)section;
+- (NSInteger)numberOfNoResultsRowsInSection:(NSInteger)section;
 - (UITableViewCell *)noResultsCellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectNoResultsRowAtIndexPath:(NSIndexPath *)indexPath;
 
@@ -34,7 +36,7 @@
 #pragma mark Loading Methods
 
 - (NSInteger)numberOfLoadingSections;
-- (NSInteger)NumberOfLoadingRowsInSection:(NSInteger)section;
+- (NSInteger)numberOfLoadingRowsInSection:(NSInteger)section;
 - (UITableViewCell *)loadingCellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectLoadingRowAtIndexPath:(NSIndexPath *)indexPath;
 
