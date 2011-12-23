@@ -15,8 +15,11 @@ typedef void (^PLRequestFailureBlock)(NSError *);
 
 @interface PLRequest : NSObject
 {
-	NSMutableURLRequest	*url_request;
 	NSURLConnection			*url_connection;
+	NSMutableURLRequest	*url_request;
+	NSMutableData				*data;
+	PLRequestSuccessBlock	success_block;
+	PLRequestFailureBlock	failure_block;
 }
 
 - (id)initWithURL:(PLURL *)url;

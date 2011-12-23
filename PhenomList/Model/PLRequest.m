@@ -22,6 +22,9 @@
 
 - (void)performRequestWithSuccessBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock
 {
+	success_block = [successBlock copy];
+	failure_block = [failureBlock copy];
+	
 	url_connection = [[NSURLConnection alloc] initWithRequest:url_request delegate:self startImmediately:YES];
 }
 
@@ -29,33 +32,35 @@
 #pragma mark NSURLConnectionDelegate Methods
 
 /*- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
-{
-        
-}*/
+ {
+ 
+ }*/
 
 /*- (void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
-{
-        
-}*/
+ {
+ 
+ }*/
 
-/*- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)redirectResponse
+- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)redirectResponse
 {
-        
-}*/
+	data = [[NSMutableData alloc] init];
+	
+	return request;
+}
 
-/*- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)theData
 {
-       
-}*/
+	[data appendData:theData];
+}
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-        
+	failure_block(error);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	
+	NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 }
 
 @end
