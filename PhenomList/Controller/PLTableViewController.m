@@ -17,10 +17,28 @@
 
 + (UITableViewCell *)noResultsCell
 {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"no results cell"];
     
+    cell.textLabel.text = @"No Results";
+    
+    return cell;
 }
 
++ (UITableViewCell *)loadingCell
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"no results cell"];
+    
+    cell.textLabel.text = @"Loading...";
+    
+    return cell;
+}
 
++ (UITableViewCell *)blankCell
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"no results cell"];
+    
+    return cell;
+}
 
 #pragma mark - 
 #pragma mark TableView Method Overrides
@@ -125,7 +143,7 @@
 
 - (UITableViewCell *)noResultsCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    return [[self class] noResultsCell];
 }
 
 - (void)didSelectNoResultsRowAtIndexPath:(NSIndexPath *)indexPath
@@ -138,17 +156,17 @@
 
 - (NSInteger)numberOfLoadingSections
 {
-    
+    return 1;
 }
 
 - (NSInteger)numberOfLoadingRowsInSection:(NSInteger)section
 {
-    
+    return 1;
 }
 
 - (UITableViewCell *)loadingCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    return [[self class] loadingCell];
 }
 
 - (void)didSelectLoadingRowAtIndexPath:(NSIndexPath *)indexPath

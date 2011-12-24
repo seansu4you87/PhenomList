@@ -12,9 +12,17 @@
 @interface PLTableViewController : UITableViewController
 {
     PLDataState     data_state;
+    id              data;
 }
 
 @property(nonatomic, assign) PLDataState dataState;
+
+#pragma mark - 
+#pragma mark Static Methods
+
++ (UITableViewCell *)noResultsCell;
++ (UITableViewCell *)loadingCell;
++ (UITableViewCell *)blankCell;
 
 #pragma mark - 
 #pragma mark Has Data Methods
