@@ -8,6 +8,12 @@
 
 #import "PLParser.h"
 
+@class PLList;
+
 @interface PLListParser : PLParser
+{
+    NSMutableArray  *lists;
+    PLList          *current_list;
+}
 
 @end

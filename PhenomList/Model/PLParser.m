@@ -10,4 +10,18 @@
 
 @implementation PLParser
 
+- (id)initWithData:(NSData *)data
+{
+    if (self = [super initWithData:data])
+    {
+        //NSLog(@"%@ Data\n%@", NSStringFromClass([self class]), [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    }
+    return self;
+}
+
+- (id)data
+{
+    return nil;
+}
+
 @end

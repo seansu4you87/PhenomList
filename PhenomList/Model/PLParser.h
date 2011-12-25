@@ -10,4 +10,6 @@
 
 @interface PLParser : HBAParser
 
+@property(nonatomic, readonly) id data;
+
 @end
