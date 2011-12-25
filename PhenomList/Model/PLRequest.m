@@ -11,11 +11,12 @@
 
 @implementation PLRequest
 
-- (id)initWithURL:(PLURL *)url
+- (id)initWithURL:(PLURL *)url andParserClass:(Class)parserClass
 {
 	if (self = [super init])
 	{
 		url_request = [[NSMutableURLRequest alloc] initWithURL:url];
+        parser_class = parserClass;
 	}
 	return self;
 }
@@ -62,6 +63,8 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    
+    
 }
 
 @end

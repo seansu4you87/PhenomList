@@ -27,9 +27,11 @@ typedef void (^PLRequestFailureBlock)(NSError *);
 	NSMutableData			*data;
 	PLRequestSuccessBlock	success_block;
 	PLRequestFailureBlock	failure_block;
+    
+    Class                   parser_class;
 }
 
-- (id)initWithURL:(PLURL *)url;
+- (id)initWithURL:(PLURL *)url andParserClass:(Class)parserClass;
 - (void)performRequestWithSuccessBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock;
 
 @end

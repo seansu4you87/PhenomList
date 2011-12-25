@@ -9,6 +9,7 @@
 #import "PLListsController.h"
 #import "PLRequest.h"
 #import "PLURL.h"
+#import "PLListParser.h"
 
 @implementation PLListsController
 
@@ -18,7 +19,7 @@
     {
         self.title = @"PhenomList";
         
-        PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL]];
+        PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
         [request performRequestWithSuccessBlock:^(id result){
             
             
