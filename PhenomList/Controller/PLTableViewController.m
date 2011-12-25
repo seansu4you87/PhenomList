@@ -91,6 +91,11 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (self.dataState)
@@ -110,17 +115,26 @@
 
 - (NSInteger)numberOfDataSections
 {
-    
+    if (self.tableView.style == UITableViewStylePlain)
+        return 1;
+    else 
+        return [data count];
 }
 
 - (NSInteger)numberOfDataRowsInSection:(NSInteger)section
 {
-    
+    if (self.tableView.style == UITableViewStylePlain)
+        return [data count];
+    else 
+        return [[data objectAtIndex:section] count];
 }
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
+    cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
+    return cell;
 }
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
@@ -172,6 +186,18 @@
 - (void)didSelectLoadingRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+#pragma mark - 
+#pragma mark Setters and Getters
+
+- (void)setDataState:(PLDataState)dataState
+{
+    if (data_state == dataState)
+        return;
+    
+    data_state = dataState;
+    [self.tableView reloadData];
 }
 
 @end

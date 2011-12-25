@@ -8,6 +8,7 @@
 
 #import "PLRequest.h"
 #import "PLURL.h"
+#import "PLParser.h"
 
 @implementation PLRequest
 
@@ -62,9 +63,13 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+	//NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
     
+    PLParser *parser = [[parser_class alloc] initWithData:data];
+    [parser parse];
     
+    if (success_block)
+        success_block(parser.data);
 }
 
 @end
