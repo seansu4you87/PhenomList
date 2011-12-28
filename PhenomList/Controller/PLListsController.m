@@ -42,7 +42,7 @@
 - (void)wtf
 {
     NSLog(@"test");
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
 }
 
 - (NSInteger)numberOfDataSections
