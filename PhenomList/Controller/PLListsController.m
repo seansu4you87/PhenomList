@@ -15,7 +15,7 @@
 
 - (id)init
 {
-    if (self = [super init])
+    if (self = [super initWithStyle:UITableViewStylePlain])
     {
         self.title = @"PhenomList";
         
@@ -34,15 +34,21 @@
         
         self.dataState = PLDataStateLoading;
         
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(wtf)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(print)];
+        self.navigationItem.rightBarButtonItem = item;
     }
     return self;
 }
 
-- (void)wtf
+- (void)print
 {
     NSLog(@"test");
     //[self.tableView reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"selecting...");
 }
 
 - (NSInteger)numberOfDataSections

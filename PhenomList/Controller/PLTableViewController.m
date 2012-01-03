@@ -98,6 +98,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"WTF IS GOING ON");
     switch (self.dataState)
     {
         case PLDataStateHasData:
