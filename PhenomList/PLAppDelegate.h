@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class PLListsController;
+
 @interface PLAppDelegate : UIResponder <UIApplicationDelegate>
+{
+	PLListsController *list_controller;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

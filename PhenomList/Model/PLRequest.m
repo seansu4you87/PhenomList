@@ -60,7 +60,6 @@
     if (failure_block)
         failure_block(error);
 }
-
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	//NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);

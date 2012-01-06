@@ -23,35 +23,22 @@
         [request performRequestWithSuccessBlock:^(id result){
             
             data = result;
-            //self.dataState = PLDataStateHasData;
-            data_state = PLDataStateHasData;
+            self.dataState = PLDataStateHasData;
+			[self.tableView reloadData];
             
         }andFailureBlock:^(NSError *error){
             
-            
+            self.dataState = PLDataStateNoResults;
+			[self.tableView reloadData];
             
         }];
         
         self.dataState = PLDataStateLoading;
-        
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(print)];
-        self.navigationItem.rightBarButtonItem = item;
     }
     return self;
 }
 
-- (void)print
-{
-    NSLog(@"test");
-    //[self.tableView reloadData];
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"selecting...");
-}
-
-- (NSInteger)numberOfDataSections
+/*- (NSInteger)numberOfDataSections
 {
     return 1;
 }
@@ -59,7 +46,7 @@
 - (NSInteger)numberOfDataRowsInSection:(NSInteger)section
 {
     return 1;
-}
+}*/
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

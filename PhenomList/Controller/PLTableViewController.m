@@ -98,7 +98,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"WTF IS GOING ON");
     switch (self.dataState)
     {
         case PLDataStateHasData:
@@ -109,6 +108,25 @@
         case PLDataStateLoading:
             break;
     }
+}
+
+#pragma mark - 
+#pragma mark Data Stuff
+
+- (void)gotData:(id)theData
+{
+	if ([theData count] == 0)
+	{
+		data = nil;
+		self.dataState = PLDataStateNoResults;
+	}
+	else
+	{
+		data = theData;
+		self.dataState = PLDataStateHasData;
+	}
+	
+	[self.tableView reloadData];
 }
 
 #pragma mark - 

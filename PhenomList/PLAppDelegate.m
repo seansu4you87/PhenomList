@@ -21,9 +21,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    PLListsController *listController = [[PLListsController alloc] init];
+    list_controller = [[PLListsController alloc] init];
     
-    [self.window addSubview:[[UINavigationController alloc] initWithRootViewController:listController].view];
+    [self.window addSubview:[[UINavigationController alloc] initWithRootViewController:list_controller].view];
 	
     return YES;
 }
