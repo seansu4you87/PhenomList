@@ -22,8 +22,9 @@
     [self.window makeKeyAndVisible];
     
     list_controller = [[PLListsController alloc] init];
-    
-    [self.window addSubview:[[UINavigationController alloc] initWithRootViewController:list_controller].view];
+    nav_controller = [[UINavigationController alloc] initWithRootViewController:list_controller];
+	
+    [self.window addSubview:nav_controller.view];
 	
     return YES;
 }

@@ -11,6 +11,8 @@
 #import "PLURL.h"
 #import "PLListParser.h"
 
+#import "PLArticleViewController.h"
+
 @implementation PLListsController
 
 - (id)init
@@ -58,7 +60,10 @@
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    PLArticleViewController *controller = [[PLArticleViewController alloc] init];
+	
+	UINavigationController *test = self.navigationController;
+	[self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

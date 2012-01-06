@@ -13,6 +13,7 @@
 @interface PLAppDelegate : UIResponder <UIApplicationDelegate>
 {
 	PLListsController *list_controller;
+	UINavigationController *nav_controller;
 }
 
 @property (strong, nonatomic) UIWindow *window;
