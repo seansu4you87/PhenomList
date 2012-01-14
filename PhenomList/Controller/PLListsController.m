@@ -26,12 +26,10 @@
             
             data = result;
             self.dataState = PLDataStateHasData;
-			[self.tableView reloadData];
             
         }andFailureBlock:^(NSError *error){
             
             self.dataState = PLDataStateNoResults;
-			[self.tableView reloadData];
             
         }];
         
