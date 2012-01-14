@@ -26,6 +26,11 @@
 	
     [self.window addSubview:nav_controller.view];
 	
+//    [[UINavigationBar appearance] setBackgroundImage:/*your image*/nil forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearanceWhenContainedIn:[nav_controller class], nil] setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    
+    //UIImage *myImage = [UIImage imageNamed:@"yourimagename.png"];
+    
     return YES;
 }
 
