@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5948E2AC14C2A6D000E9ADEA /* PhotoFrameSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */; };
+		5948E2AD14C2A6D000E9ADEA /* PLLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */; };
+		5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */; };
+		5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */; };
 		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
 		ACC48C0A14B6853900285E3C /* HBAInlineScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFA14B6853900285E3C /* HBAInlineScrollingViewController.m */; };
 		ACC48C0B14B6853900285E3C /* HBAPaginatedPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFC14B6853900285E3C /* HBAPaginatedPageView.m */; };
@@ -63,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoFrameSmall@2x.png"; sourceTree = "<group>"; };
+		5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLLogo@2x.png"; sourceTree = "<group>"; };
+		5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLNavigationBar@2x.png"; sourceTree = "<group>"; };
+		5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCell@2x.png"; sourceTree = "<group>"; };
 		AC0ED36614A4870B0095CD09 /* PLURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLURL.h; path = Model/PLURL.h; sourceTree = "<group>"; };
 		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
 		ACC48BF914B6853900285E3C /* HBAInlineScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAInlineScrollingViewController.h; sourceTree = "<group>"; };
@@ -169,6 +177,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5948E2A714C2A6D000E9ADEA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */,
+				5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */,
+				5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */,
+				5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		ACC48BF814B6853900285E3C /* AppStoreView */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +296,7 @@
 		BDE62B9C14A273F8003423CA /* PhenomList */ = {
 			isa = PBXGroup;
 			children = (
+				5948E2A714C2A6D000E9ADEA /* assets */,
 				BD1C8EFF14A6B164005DAE02 /* HBA */,
 				BDE62BC514A2741C003423CA /* Model */,
 				BDE62BC714A2742A003423CA /* View */,
@@ -431,6 +451,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE62BA114A273F8003423CA /* InfoPlist.strings in Resources */,
+				5948E2AC14C2A6D000E9ADEA /* PhotoFrameSmall@2x.png in Resources */,
+				5948E2AD14C2A6D000E9ADEA /* PLLogo@2x.png in Resources */,
+				5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */,
+				5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

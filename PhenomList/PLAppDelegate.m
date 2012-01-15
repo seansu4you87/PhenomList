@@ -26,10 +26,12 @@
 	
     [self.window addSubview:nav_controller.view];
 	
-//    [[UINavigationBar appearance] setBackgroundImage:/*your image*/nil forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearanceWhenContainedIn:[nav_controller class], nil] setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    UIImage *navigationBackground = [UIImage imageNamed:@"PLNavigationBar.png"];
+
+    [[UINavigationBar appearanceWhenContainedIn:[nav_controller class], nil] setBackgroundImage:navigationBackground forBarMetrics:UIBarMetricsDefault];
     
-    //UIImage *myImage = [UIImage imageNamed:@"yourimagename.png"];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+
     
     return YES;
 }

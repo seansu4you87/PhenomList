@@ -12,6 +12,7 @@
 #import "PLListParser.h"
 
 #import "PLArticleViewController.h"
+#import <UIKit/UIKit.h>
 
 @implementation PLListsController
 
@@ -20,6 +21,9 @@
     if (self = [super initWithStyle:UITableViewStylePlain])
     {
         self.title = @"PhenomList";
+        
+        
+        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
         
         PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
         [request performRequestWithSuccessBlock:^(id result){
