@@ -57,6 +57,10 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
     cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLTableCell.png"]];
+    
     return cell;
 }
 
@@ -64,7 +68,7 @@
 {
     PLArticleViewController *controller = [[PLArticleViewController alloc] init];
 	
-	UINavigationController *test = self.navigationController;
+	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];
 }
 
