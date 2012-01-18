@@ -12,6 +12,7 @@
 #import "PLListParser.h"
 
 #import "PLArticleViewController.h"
+#import "PLTableCell.h"
 #import <UIKit/UIKit.h>
 
 @implementation PLListsController
@@ -54,12 +55,11 @@
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    UITableViewCell *cell = [[PLTableCell alloc] 
+                             initWithLabel:[NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row] 
+                             andImages:[NSArray arrayWithObjects: nil]];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
-    
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLTableCell.png"]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
     
     return cell;
 }
