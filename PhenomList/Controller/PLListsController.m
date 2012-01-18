@@ -10,8 +10,10 @@
 #import "PLRequest.h"
 #import "PLURL.h"
 #import "PLListParser.h"
+#import "PLList.h"
 
 #import "PLArticleViewController.h"
+#import "PLListCell.h"
 #import <UIKit/UIKit.h>
 
 @implementation PLListsController
@@ -55,19 +57,29 @@
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    PLList *list = [data objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
+    UITableViewCell *cell = [[PLListCell alloc] 
+                             initWithLabel:list.title 
+                             andImages:[NSArray arrayWithObjects: nil]];
     
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLTableCell.png"]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
     
     return cell;
+}
+
+- (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 66;
 }
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PLArticleViewController *controller = [[PLArticleViewController alloc] init];
+
+//    PLTableCell *cell = (PLTableCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+//    cell.titleLabel.shadowColor = blah
+    
 	
 	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];
