@@ -22,6 +22,7 @@
     {
         self.title = @"PhenomList";
         
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
         
