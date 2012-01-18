@@ -98,6 +98,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.dataState == PLDataStateHasData)
+        return [self heightForDataRowAtIndexPath:indexPath];
+    
     return 44;
 }
 
@@ -159,6 +162,11 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
     return cell;
+}
+
+- (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
 }
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath

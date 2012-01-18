@@ -30,6 +30,7 @@
 - (NSInteger)numberOfDataSections;
 - (NSInteger)numberOfDataRowsInSection:(NSInteger)section;
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath;
 
 #pragma mark - 
