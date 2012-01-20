@@ -7,6 +7,7 @@
 //
 
 #import "PLListCell.h"
+#import "PLListCellSelection.h"
 
 @implementation PLListCell
 
@@ -27,6 +28,13 @@
         // Make Multiline
         self.textLabel.numberOfLines = 2;
         
+        //Label Color
+        self.textLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
+        
+        //Shadow
+        self.textLabel.shadowColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
+        self.textLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
+        
         // Make Font Smaller so it fits
         self.textLabel.font = [UIFont boldSystemFontOfSize: 16.0];
 
@@ -35,11 +43,10 @@
         self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLTableCell.png"]];
         
         // Set selection color
-        UIView *myBackView = [[UIView alloc] initWithFrame:self.frame];
-        myBackView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.1];
+        UIView *myBackView = [[PLListCellSelection alloc] initWithInnerShadowSize:CGSizeMake(0.0f, 0.0f) blur:3 rect:self.frame andColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:.1]];
+        //myBackView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.03];
         self.selectedBackgroundView = myBackView;
-        self.textLabel.highlightedTextColor = [UIColor blackColor];
-
+        self.textLabel.highlightedTextColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
         
 	}
 	return self;
@@ -78,6 +85,17 @@
 		
 	}
 }
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animate
+{
+    UIColor * newShadow = highlighted ? [UIColor colorWithRed:0 green:0 blue:0 alpha:.1] : [UIColor whiteColor];
+    
+    
+    self.textLabel.shadowColor = newShadow;
+    
+    [super setHighlighted:highlighted animated:animate];
+}
+
 
 
 @end

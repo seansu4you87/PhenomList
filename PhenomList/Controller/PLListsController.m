@@ -14,6 +14,7 @@
 
 #import "PLArticleViewController.h"
 #import "PLListCell.h"
+#import "PLTableHeader.h"
 #import <UIKit/UIKit.h>
 
 @implementation PLListsController
@@ -25,6 +26,11 @@
         self.title = @"PhenomList";
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
+        UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+        self.tableView.tableHeaderView = tableHeader;
+        [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
+
         
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
         
@@ -68,18 +74,16 @@
     return cell;
 }
 
+/*
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 66;
 }
+*/
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PLArticleViewController *controller = [[PLArticleViewController alloc] init];
-
-//    PLTableCell *cell = (PLTableCell *)[self.tableView cellForRowAtIndexPath:indexPath];
-//    cell.titleLabel.shadowColor = blah
-    
 	
 	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];

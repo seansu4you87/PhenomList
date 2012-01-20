@@ -12,6 +12,12 @@
 		5948E2AD14C2A6D000E9ADEA /* PLLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */; };
 		5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */; };
 		5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */; };
+		59CC14C114C9FB8F00775109 /* InnerShadowDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */; };
+		59CC14C514C9FEDD00775109 /* PLListCellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14C414C9FEDD00775109 /* PLListCellSelection.m */; };
+		59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */; };
+		59CC14F014CA10FE00775109 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14EF14CA10FE00775109 /* PLTableHeader.m */; };
+		59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F714CA153700775109 /* PLTableHeader@2x.png */; };
+		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
 		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
 		ACC48C0A14B6853900285E3C /* HBAInlineScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFA14B6853900285E3C /* HBAInlineScrollingViewController.m */; };
 		ACC48C0B14B6853900285E3C /* HBAPaginatedPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFC14B6853900285E3C /* HBAPaginatedPageView.m */; };
@@ -68,12 +74,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5900996114C68A530086B290 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = PLListCell.h; sourceTree = "<group>"; };
+		5900996114C68A530086B290 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLListCell.h; sourceTree = "<group>"; };
 		5900996214C68A530086B290 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLListCell.m; sourceTree = "<group>"; };
 		5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoFrameSmall@2x.png"; sourceTree = "<group>"; };
 		5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLLogo@2x.png"; sourceTree = "<group>"; };
 		5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLNavigationBar@2x.png"; sourceTree = "<group>"; };
 		5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCell@2x.png"; sourceTree = "<group>"; };
+		59CC14BF14C9FB8F00775109 /* InnerShadowDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerShadowDrawing.h; sourceTree = "<group>"; };
+		59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerShadowDrawing.m; sourceTree = "<group>"; };
+		59CC14C314C9FEDD00775109 /* PLListCellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLListCellSelection.h; sourceTree = "<group>"; };
+		59CC14C414C9FEDD00775109 /* PLListCellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLListCellSelection.m; sourceTree = "<group>"; };
+		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
+		59CC14EE14CA10FE00775109 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableHeader.h; sourceTree = "<group>"; };
+		59CC14EF14CA10FE00775109 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableHeader.m; sourceTree = "<group>"; };
+		59CC14F714CA153700775109 /* PLTableHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeader@2x.png"; sourceTree = "<group>"; };
+		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
 		AC0ED36614A4870B0095CD09 /* PLURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLURL.h; path = Model/PLURL.h; sourceTree = "<group>"; };
 		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
 		ACC48BF914B6853900285E3C /* HBAInlineScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAInlineScrollingViewController.h; sourceTree = "<group>"; };
@@ -183,7 +198,10 @@
 		5948E2A714C2A6D000E9ADEA /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */,
 				5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */,
+				59CC14F714CA153700775109 /* PLTableHeader@2x.png */,
+				59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */,
 				5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */,
 				5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */,
 				5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */,
@@ -378,8 +396,14 @@
 		BDE62BC714A2742A003423CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59CC14BF14C9FB8F00775109 /* InnerShadowDrawing.h */,
+				59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */,
 				5900996114C68A530086B290 /* PLListCell.h */,
 				5900996214C68A530086B290 /* PLListCell.m */,
+				59CC14C314C9FEDD00775109 /* PLListCellSelection.h */,
+				59CC14C414C9FEDD00775109 /* PLListCellSelection.m */,
+				59CC14EE14CA10FE00775109 /* PLTableHeader.h */,
+				59CC14EF14CA10FE00775109 /* PLTableHeader.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -460,6 +484,9 @@
 				5948E2AD14C2A6D000E9ADEA /* PLLogo@2x.png in Resources */,
 				5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */,
 				5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */,
+				59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */,
+				59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */,
+				59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +556,9 @@
 				ACC48C3A14B68EEE00285E3C /* HBANotificationCenter.m in Sources */,
 				ACC48C3D14B68FA500285E3C /* PLArticleViewController.m in Sources */,
 				5900996314C68A530086B290 /* PLListCell.m in Sources */,
+				59CC14C114C9FB8F00775109 /* InnerShadowDrawing.m in Sources */,
+				59CC14C514C9FEDD00775109 /* PLListCellSelection.m in Sources */,
+				59CC14F014CA10FE00775109 /* PLTableHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
