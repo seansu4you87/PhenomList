@@ -99,8 +99,13 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.dataState == PLDataStateHasData)
+    {
         return [self heightForDataRowAtIndexPath:indexPath];
-    
+    }
+    else if(self.dataState == PLDataStateLoading)
+    {
+        return [self heightForLoadingRowAtIndexPath:indexPath];
+    }
     return 44;
 }
 
@@ -169,6 +174,7 @@
     return 44;
 }
 
+
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -218,6 +224,11 @@
 - (void)didSelectLoadingRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+- (CGFloat)heightForLoadingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
 }
 
 #pragma mark - 

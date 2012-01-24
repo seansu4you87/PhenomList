@@ -48,6 +48,7 @@
 - (NSInteger)numberOfLoadingRowsInSection:(NSInteger)section;
 - (UITableViewCell *)loadingCellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectLoadingRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)heightForLoadingRowAtIndexPath:(NSIndexPath *)indexPath;
 
 
 @end

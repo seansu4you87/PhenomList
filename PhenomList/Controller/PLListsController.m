@@ -34,6 +34,8 @@
             
             data = result;
             self.dataState = PLDataStateLoading;
+            //self.tableView.scrollEnabled = YES;
+
             
         }andFailureBlock:^(NSError *error){
             
@@ -42,6 +44,7 @@
         }];
         
         self.dataState = PLDataStateLoading;
+        self.tableView.scrollEnabled = NO;
     }
     return self;
 }
@@ -62,41 +65,35 @@
     
 }
 
-/*- (NSInteger)numberOfDataSections
-{
-    return 1;
-}
+#pragma mark - 
+#pragma mark Data Stuff
 
-- (NSInteger)numberOfDataRowsInSection:(NSInteger)section
-{
-    return 1;
-}*/
+
+/*- (NSInteger)numberOfDataSections
+ {
+ return 1;
+ }
+ 
+ - (NSInteger)numberOfDataRowsInSection:(NSInteger)section
+ {
+ return 1;
+ }*/
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(self.dataState == PLDataStateLoading)
-    {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-        [cell addSubview:[[PLLoadingView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]];
-        return cell;
-    }
-    else   
-    {
-        PLList *list = [data objectAtIndex:indexPath.row];
-        
-        UITableViewCell *cell = [[PLListCell alloc] 
-                                 initWithLabel:list.title 
-                                 andImages:[NSArray arrayWithObjects: nil]];
-        return cell;
-    }
+    PLList *list = [data objectAtIndex:indexPath.row];
     
+    UITableViewCell *cell = [[PLListCell alloc] 
+                             initWithLabel:list.title 
+                             andImages:[NSArray arrayWithObjects: nil]];
+    return cell;
 }
 
 /*
-- (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 66;
-}
+ - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return 66;
+ }
 */
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,5 +103,27 @@
 	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];
 }
+
+
+#pragma mark - 
+#pragma mark Loading Stuff
+
+-(CGFloat)heightForLoadingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.tableView.frame.size.height;
+}
+
+- (UITableViewCell *)loadingCellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+    
+    PLLoadingView *loadingView = [[PLLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+    //loadingView.backgroundColor = [UIColor redColor];
+    [cell addSubview:loadingView];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+
 
 @end
