@@ -11,10 +11,12 @@
 #import "PLURL.h"
 #import "PLListParser.h"
 #import "PLList.h"
+#import "PLLoadingView.h"
 
 #import "PLArticleViewController.h"
 #import "PLListCell.h"
 #import "PLTableHeader.h"
+#import "PLTableFooter.h"
 #import <UIKit/UIKit.h>
 
 @implementation PLListsController
@@ -25,20 +27,13 @@
     {
         self.title = @"PhenomList";
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
-        self.tableView.tableHeaderView = tableHeader;
-        [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
-
-        
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
         
         PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
         [request performRequestWithSuccessBlock:^(id result){
             
             data = result;
-            self.dataState = PLDataStateHasData;
+            self.dataState = PLDataStateLoading;
             
         }andFailureBlock:^(NSError *error){
             
@@ -49,6 +44,22 @@
         self.dataState = PLDataStateLoading;
     }
     return self;
+}
+
+-(void)viewDidLoad
+{
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    
+    UIView *tableFooter = [[PLTableFooter alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    
+    self.tableView.tableHeaderView = tableHeader;
+    self.tableView.tableFooterView = tableFooter;
+    
+    [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, -tableFooter.bounds.size.height, 0.0f)];
+    
 }
 
 /*- (NSInteger)numberOfDataSections
@@ -63,15 +74,22 @@
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PLList *list = [data objectAtIndex:indexPath.row];
+    if(self.dataState == PLDataStateLoading)
+    {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+        [cell addSubview:[[PLLoadingView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)]];
+        return cell;
+    }
+    else   
+    {
+        PLList *list = [data objectAtIndex:indexPath.row];
+        
+        UITableViewCell *cell = [[PLListCell alloc] 
+                                 initWithLabel:list.title 
+                                 andImages:[NSArray arrayWithObjects: nil]];
+        return cell;
+    }
     
-    UITableViewCell *cell = [[PLListCell alloc] 
-                             initWithLabel:list.title 
-                             andImages:[NSArray arrayWithObjects: nil]];
-    
-    //cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
-    
-    return cell;
 }
 
 /*
