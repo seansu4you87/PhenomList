@@ -12,16 +12,34 @@
 
 @synthesize dateCreated = date_created, dateUpdated = date_updated, title, summary, phenoms;
 
+- (id)init
+{
+    if (self = [super init])
+    {
+        phenoms = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 - (void)fillWithDataFromList:(PLList *)list
 {
-    self.dateCreated = list.dateCreated;
-    self.dateUpdated = list.dateUpdated;
+    if (list.dateCreated)
+        self.dateCreated = list.dateCreated;
     
-    self.title = list.title;
-    self.summary = list.summary;
+    if (list.dateUpdated)
+        self.dateUpdated = list.dateUpdated;
     
-    [self.phenoms removeAllObjects];
-    [self.phenoms addObjectsFromArray:list.phenoms];
+    if (list.title)
+        self.title = list.title;
+    
+    if (list.summary)
+        self.summary = list.summary;
+    
+    if ([list.phenoms count])
+    {
+        [self.phenoms removeAllObjects];
+        [self.phenoms addObjectsFromArray:list.phenoms];
+    }
 }
 
 @end

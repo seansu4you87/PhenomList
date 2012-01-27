@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Blackboard Mobile. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PLTableViewController.h"
 
 @class PLList;
 
-@interface PLListDetailController : UITableViewController
+@interface PLListDetailController : PLTableViewController
 {
     PLList *list;
 }

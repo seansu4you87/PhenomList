@@ -65,6 +65,8 @@
     if ( [theElement isEqualToString:@"lead"] )
         current_phenom.lead = theContent;
         
+    if ( [theElement isEqualToString:@"person"] )
+        [list.phenoms addObject:current_phenom];
     
 //    if ( [theElement isEqualToString:@"created-at"] )
         
