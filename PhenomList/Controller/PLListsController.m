@@ -50,8 +50,11 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -(void)viewDidLoad
 =======
+=======
+>>>>>>> merging origin/master into mergefuckup
 - (void)loadView
 {
     [super loadView];
@@ -69,7 +72,13 @@
 }
 
 /*- (NSInteger)numberOfDataSections
+<<<<<<< HEAD
 >>>>>>> commit old work
+=======
+=======
+-(void)viewDidLoad
+>>>>>>> origin/master
+>>>>>>> merging origin/master into mergefuckup
 {
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -110,6 +119,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
  {
@@ -117,13 +127,26 @@
  }
 */
 =======
+=======
+>>>>>>> merging origin/master into mergefuckup
 
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 66;
 }
 
+<<<<<<< HEAD
 >>>>>>> commit old work
+=======
+=======
+/*
+ - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return 66;
+ }
+*/
+>>>>>>> origin/master
+>>>>>>> merging origin/master into mergefuckup
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
