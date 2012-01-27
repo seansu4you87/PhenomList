@@ -60,6 +60,7 @@
 		BD2F2B5314D2B5D000B4A6D1 /* PLApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5214D2B5D000B4A6D1 /* PLApplicationData.m */; };
 		BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */; };
 		BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */; };
+		BD2F2B5C14D2BAC100B4A6D1 /* PLListDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5B14D2BAC100B4A6D1 /* PLListDetailParser.m */; };
 		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
 		BD33712A14A51E6900407496 /* PLListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListController.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
@@ -156,6 +157,8 @@
 		BD2F2B5514D2B76300B4A6D1 /* PLUrlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLUrlHelper.h; path = Helper/PLUrlHelper.h; sourceTree = "<group>"; };
 		BD2F2B5714D2B82200B4A6D1 /* PLLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLLogo.h; path = View/PLLogo.h; sourceTree = "<group>"; };
 		BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLLogo.m; path = View/PLLogo.m; sourceTree = "<group>"; };
+		BD2F2B5A14D2BAC100B4A6D1 /* PLListDetailParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListDetailParser.h; path = Model/PLListDetailParser.h; sourceTree = "<group>"; };
+		BD2F2B5B14D2BAC100B4A6D1 /* PLListDetailParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListDetailParser.m; path = Model/PLListDetailParser.m; sourceTree = "<group>"; };
 		BD33712414A5186B00407496 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableViewController.h; path = Controller/PLTableViewController.h; sourceTree = "<group>"; };
 		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
 		BD33712814A51E6900407496 /* PLListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListController.h; path = Controller/PLListController.h; sourceTree = "<group>"; };
@@ -276,8 +279,8 @@
 		BD2F2B4614D2A52000B4A6D1 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */,
 				BD2F2B5514D2B76300B4A6D1 /* PLUrlHelper.h */,
+				BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */,
 				BD2F2B4714D2A5CD00B4A6D1 /* PLDateHelper.h */,
 				BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */,
 				BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */,
@@ -379,6 +382,8 @@
 				BD1C8F0A14A6B277005DAE02 /* PLParser.m */,
 				BD1C8F0C14A6B299005DAE02 /* PLListParser.h */,
 				BD1C8F0D14A6B299005DAE02 /* PLListParser.m */,
+				BD2F2B5A14D2BAC100B4A6D1 /* PLListDetailParser.h */,
+				BD2F2B5B14D2BAC100B4A6D1 /* PLListDetailParser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				BD2F2B5314D2B5D000B4A6D1 /* PLApplicationData.m in Sources */,
 				BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */,
 				BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */,
+				BD2F2B5C14D2BAC100B4A6D1 /* PLListDetailParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

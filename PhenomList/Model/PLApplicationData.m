@@ -7,8 +7,11 @@
 //
 
 #import "PLApplicationData.h"
-#import "PLUrlHelper.h"
+#import "PLList.h"
 #import "PLListParser.h"
+#import "PLListDetailParser.h"
+
+#import "PLUrlHelper.h"
 
 @interface PLApplicationData (private)
 
@@ -34,6 +37,17 @@ PLApplicationData *appData;
     return self;
 }
 
+- (PLList *)listWithUid:(NSInteger)uid
+{
+    for (PLList *list in lists)
+    {
+        if (list.uid == uid)
+            return list;
+    }
+    
+    return nil;
+}
+
 - (void)getListsWithSuccessBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock
 {
     if (lists)
@@ -47,6 +61,27 @@ PLApplicationData *appData;
         
         lists = result;
         successBlock(result);
+        
+    }andFailureBlock:failureBlock];
+}
+
+- (void)getDetailForList:(PLList *)list successBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock
+{
+    if (list.summary && [list.phenoms count])
+    {
+        successBlock(list);
+        return;
+    }
+    
+    PLRequest *request = [[PLRequest alloc] initWithURL:[PLUrlHelper listDetailUrlForListId:list.uid] andParserClass:[PLListDetailParser class]];
+    [request performRequestWithSuccessBlock:^(id result){
+        
+        PLList *resultList = (PLList *)result;
+        PLList *cachedList = [self listWithUid:resultList.uid];
+        
+        [cachedList fillWithDataFromList:resultList];
+        
+        successBlock(cachedList);
         
     }andFailureBlock:failureBlock];
 }

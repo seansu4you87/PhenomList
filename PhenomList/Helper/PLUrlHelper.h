@@ -11,6 +11,6 @@
 @interface PLUrlHelper : NSURL
 
 + (PLUrlHelper *)listsUrl;
-+ (PLUrlHelper *)listDetailUrlForListId:(NSString *)listID;
++ (PLUrlHelper *)listDetailUrlForListId:(NSInteger)uid;
 
 @end

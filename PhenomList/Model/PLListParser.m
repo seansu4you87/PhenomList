@@ -36,7 +36,7 @@
         [lists addObject:current_list];
     
     if ([theElement isEqualToString:@"id"])
-        current_list.ID = theContent;
+        current_list.uid = [theContent intValue];
     
     if ([theElement isEqualToString:@"summary"])
         current_list.summary = theContent;

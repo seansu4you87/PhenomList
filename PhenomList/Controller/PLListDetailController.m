@@ -7,9 +7,28 @@
 //
 
 #import "PLListDetailController.h"
-
+#import "PLList.h"
+#import "PLApplicationData.h"
 
 @implementation PLListDetailController
+
+- (id)initWithList:(PLList *)theList
+{
+    if (self = [super init])
+    {
+        list = theList;
+        [[PLApplicationData singleton] getDetailForList:list successBlock:^(id result){
+            
+            
+            
+        } andFailureBlock:^(NSError *error){
+            
+            
+        }];
+    }
+    return self;
+}
+
 
 
 @end

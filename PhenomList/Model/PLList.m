@@ -12,4 +12,16 @@
 
 @synthesize dateCreated = date_created, dateUpdated = date_updated, title, summary, phenoms;
 
+- (void)fillWithDataFromList:(PLList *)list
+{
+    self.dateCreated = list.dateCreated;
+    self.dateUpdated = list.dateUpdated;
+    
+    self.title = list.title;
+    self.summary = list.summary;
+    
+    [self.phenoms removeAllObjects];
+    [self.phenoms addObjectsFromArray:list.phenoms];
+}
+
 @end

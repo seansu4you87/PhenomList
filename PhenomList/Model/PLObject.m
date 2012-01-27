@@ -10,6 +10,6 @@
 
 @implementation PLObject
 
-@synthesize ID;
+@synthesize uid;
 
 @end

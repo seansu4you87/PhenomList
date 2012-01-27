@@ -10,16 +10,19 @@
 
 @interface PLList : PLObject
 {
-	NSDate		*date_created;
-	NSDate		*date_updated;
+	NSDate          *date_created;
+	NSDate          *date_updated;
+
 	NSString		*title;
 	NSString		*summary;
 	
-	NSMutableArray *phenoms;
+	NSMutableArray  *phenoms;
 }
 
-@property(nonatomic, retain) NSDate *dateCreated, *dateUpdated;
-@property(nonatomic, retain) NSString *title, *summary;
-@property(nonatomic, retain, readonly) NSMutableArray *phenoms;
+@property(nonatomic, strong) NSDate *dateCreated, *dateUpdated;
+@property(nonatomic, strong) NSString *title, *summary;
+@property(nonatomic, strong, readonly) NSMutableArray *phenoms;
+
+- (void)fillWithDataFromList:(PLList *)list;
 
 @end

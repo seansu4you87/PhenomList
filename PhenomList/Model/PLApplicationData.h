@@ -8,6 +8,8 @@
 
 #import "PLRequest.h"
 
+@class PLList;
+
 @interface PLApplicationData : NSObject
 {
     NSArray *lists;
@@ -15,6 +17,8 @@
 
 + (PLApplicationData *)singleton;
 
+- (PLList *)listWithUid:(NSInteger)uid;
 - (void)getListsWithSuccessBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock;
+- (void)getDetailForList:(PLList *)list successBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock;
 
 @end

@@ -18,6 +18,12 @@
 #import "PLTableFooter.h"
 #import "PLLogo.h"
 
+@interface PLListController (private)
+
+- (PLList *)listForIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @implementation PLListController
 
 - (id)init
@@ -47,6 +53,12 @@
     return self;
 }
 
+- (PLList *)listForIndexPath:(NSIndexPath *)indexPath
+{
+    PLList *list = [data objectAtIndex:indexPath.row];
+    return list;
+}
+
 - (void)loadView
 {
     [super loadView];
@@ -64,12 +76,11 @@
     self.tableView.tableFooterView = tableFooter;
     
     [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, -tableFooter.bounds.size.height, 0.0f)];
-    
 }
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PLList *list = [data objectAtIndex:indexPath.row];
+    PLList *list = [self listForIndexPath:indexPath];
     
     UITableViewCell *cell = [[PLListCell alloc] 
                              initWithLabel:list.title 
@@ -84,7 +95,9 @@
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PLListDetailController *controller = [[PLListDetailController alloc] init];
+    PLList *list = [self listForIndexPath:indexPath];
+    
+    PLListDetailController *controller = [[PLListDetailController alloc] initWithList:list];
 	
 	[self.navigationController pushViewController:controller animated:YES];
 }

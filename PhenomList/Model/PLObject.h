@@ -10,9 +10,9 @@
 
 @interface PLObject : NSObject
 {
-	NSString *ID;
+    NSInteger       uid;
 }
 
-@property(nonatomic, retain) NSString *ID;
+@property(nonatomic, assign) NSInteger uid;
 
 @end

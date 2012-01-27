@@ -10,18 +10,18 @@
 
 @interface PLPhenom : PLObject
 {
-	NSDate				*date;
+	NSDate                  *date;
 	
 	NSString				*name;
 	NSString				*lead;
 	NSString				*content;
 
-	NSURL				*image_url;
-	NSURL				*video_url;
+	NSURL                   *image_url;
+	NSURL                   *video_url;
 	
-	NSMutableDictionary	*stats;
+	NSMutableDictionary     *stats;
 	
-	NSInteger			votes;
+	NSInteger               votes;
 }
 
 @property(nonatomic, retain) NSDate *date;
