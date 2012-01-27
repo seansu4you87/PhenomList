@@ -11,10 +11,12 @@
 #import "PLURL.h"
 #import "PLListParser.h"
 #import "PLList.h"
+#import "PLLoadingView.h"
 
 #import "PLArticleViewController.h"
 #import "PLListCell.h"
 #import "PLTableHeader.h"
+#import "PLTableFooter.h"
 #import <UIKit/UIKit.h>
 
 @implementation PLListsController
@@ -31,7 +33,9 @@
         [request performRequestWithSuccessBlock:^(id result){
             
             data = result;
-            self.dataState = PLDataStateHasData;
+            self.dataState = PLDataStateLoading;
+            //self.tableView.scrollEnabled = YES;
+
             
         }andFailureBlock:^(NSError *error){
             
@@ -40,10 +44,17 @@
         }];
         
         self.dataState = PLDataStateLoading;
+        self.tableView.scrollEnabled = NO;
     }
     return self;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+-(void)viewDidLoad
+=======
+=======
+>>>>>>> merging origin/master into mergefuckup
 - (void)loadView
 {
     [super loadView];
@@ -61,14 +72,41 @@
 }
 
 /*- (NSInteger)numberOfDataSections
+<<<<<<< HEAD
+>>>>>>> commit old work
+=======
+=======
+-(void)viewDidLoad
+>>>>>>> origin/master
+>>>>>>> merging origin/master into mergefuckup
 {
-    return 1;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    
+    UIView *tableFooter = [[PLTableFooter alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    
+    self.tableView.tableHeaderView = tableHeader;
+    self.tableView.tableFooterView = tableFooter;
+    
+    [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, -tableFooter.bounds.size.height, 0.0f)];
+    
 }
 
-- (NSInteger)numberOfDataRowsInSection:(NSInteger)section
-{
-    return 1;
-}*/
+#pragma mark - 
+#pragma mark Data Stuff
+
+
+/*- (NSInteger)numberOfDataSections
+ {
+ return 1;
+ }
+ 
+ - (NSInteger)numberOfDataRowsInSection:(NSInteger)section
+ {
+ return 1;
+ }*/
 
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -77,18 +115,38 @@
     UITableViewCell *cell = [[PLListCell alloc] 
                              initWithLabel:list.title 
                              andImages:[NSArray arrayWithObjects: nil]];
-    
-    //cell.textLabel.text = [NSString stringWithFormat:@"section %i, row %i", indexPath.section, indexPath.row];
-    
     return cell;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+/*
+ - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return 66;
+ }
+*/
+=======
+=======
+>>>>>>> merging origin/master into mergefuckup
 
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 66;
 }
 
+<<<<<<< HEAD
+>>>>>>> commit old work
+=======
+=======
+/*
+ - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ return 66;
+ }
+*/
+>>>>>>> origin/master
+>>>>>>> merging origin/master into mergefuckup
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -97,5 +155,27 @@
 	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];
 }
+
+
+#pragma mark - 
+#pragma mark Loading Stuff
+
+-(CGFloat)heightForLoadingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.tableView.frame.size.height;
+}
+
+- (UITableViewCell *)loadingCellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+    
+    PLLoadingView *loadingView = [[PLLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+    //loadingView.backgroundColor = [UIColor redColor];
+    [cell addSubview:loadingView];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+
 
 @end
