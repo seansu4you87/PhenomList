@@ -12,7 +12,6 @@
 		5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */; };
 		5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */; };
 		59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */; };
-		59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F714CA153700775109 /* PLTableHeader@2x.png */; };
 		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
 		AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DC14CD4B5B001F77C3 /* PLListCell.m */; };
 		AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */; };
@@ -61,6 +60,10 @@
 		BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */; };
 		BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */; };
 		BD2F2B5C14D2BAC100B4A6D1 /* PLListDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5B14D2BAC100B4A6D1 /* PLListDetailParser.m */; };
+		BD2F2B5F14D2E80000B4A6D1 /* PLListDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5E14D2E7FF00B4A6D1 /* PLListDetailView.m */; };
+		BD2F2B6214D2F14F00B4A6D1 /* PLLabelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B6114D2F14F00B4A6D1 /* PLLabelHelper.m */; };
+		BD2F2B6514D2F31200B4A6D1 /* PLPhenomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B6414D2F31200B4A6D1 /* PLPhenomButton.m */; };
+		BD2F2B6814D3065400B4A6D1 /* PLPhenomController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B6714D3065400B4A6D1 /* PLPhenomController.m */; };
 		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
 		BD33712A14A51E6900407496 /* PLListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListController.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
@@ -95,7 +98,6 @@
 		5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLNavigationBar@2x.png"; sourceTree = "<group>"; };
 		5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCell@2x.png"; sourceTree = "<group>"; };
 		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
-		59CC14F714CA153700775109 /* PLTableHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeader@2x.png"; sourceTree = "<group>"; };
 		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
 		AC5872DB14CD4B5B001F77C3 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCell.h; path = View/PLListCell.h; sourceTree = "<group>"; };
 		AC5872DC14CD4B5B001F77C3 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCell.m; path = View/PLListCell.m; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 		BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLLogo.m; path = View/PLLogo.m; sourceTree = "<group>"; };
 		BD2F2B5A14D2BAC100B4A6D1 /* PLListDetailParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListDetailParser.h; path = Model/PLListDetailParser.h; sourceTree = "<group>"; };
 		BD2F2B5B14D2BAC100B4A6D1 /* PLListDetailParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListDetailParser.m; path = Model/PLListDetailParser.m; sourceTree = "<group>"; };
+		BD2F2B5D14D2E7FF00B4A6D1 /* PLListDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListDetailView.h; path = View/PLListDetailView.h; sourceTree = "<group>"; };
+		BD2F2B5E14D2E7FF00B4A6D1 /* PLListDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListDetailView.m; path = View/PLListDetailView.m; sourceTree = "<group>"; };
+		BD2F2B6014D2F14F00B4A6D1 /* PLLabelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLLabelHelper.h; path = Helper/PLLabelHelper.h; sourceTree = "<group>"; };
+		BD2F2B6114D2F14F00B4A6D1 /* PLLabelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLLabelHelper.m; path = Helper/PLLabelHelper.m; sourceTree = "<group>"; };
+		BD2F2B6314D2F31200B4A6D1 /* PLPhenomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPhenomButton.h; path = View/PLPhenomButton.h; sourceTree = "<group>"; };
+		BD2F2B6414D2F31200B4A6D1 /* PLPhenomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPhenomButton.m; path = View/PLPhenomButton.m; sourceTree = "<group>"; };
+		BD2F2B6614D3065400B4A6D1 /* PLPhenomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPhenomController.h; path = Controller/PLPhenomController.h; sourceTree = "<group>"; };
+		BD2F2B6714D3065400B4A6D1 /* PLPhenomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPhenomController.m; path = Controller/PLPhenomController.m; sourceTree = "<group>"; };
 		BD33712414A5186B00407496 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableViewController.h; path = Controller/PLTableViewController.h; sourceTree = "<group>"; };
 		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
 		BD33712814A51E6900407496 /* PLListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListController.h; path = Controller/PLListController.h; sourceTree = "<group>"; };
@@ -250,7 +260,6 @@
 				59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */,
 				BD2F2B2314D29DDB00B4A6D1 /* PLTableFooterImage.png */,
 				BD2F2B2414D29DDB00B4A6D1 /* PLTableFooterImage@2x.png */,
-				59CC14F714CA153700775109 /* PLTableHeader@2x.png */,
 				BD2F2B2514D29DDB00B4A6D1 /* PLTableHeaderImage.png */,
 				59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */,
 			);
@@ -285,6 +294,8 @@
 				BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */,
 				BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */,
 				BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */,
+				BD2F2B6014D2F14F00B4A6D1 /* PLLabelHelper.h */,
+				BD2F2B6114D2F14F00B4A6D1 /* PLLabelHelper.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -397,6 +408,8 @@
 				BD33712914A51E6900407496 /* PLListController.m */,
 				BD2F2B4A14D2AB2D00B4A6D1 /* PLListDetailController.h */,
 				BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */,
+				BD2F2B6614D3065400B4A6D1 /* PLPhenomController.h */,
+				BD2F2B6714D3065400B4A6D1 /* PLPhenomController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -414,6 +427,10 @@
 				AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */,
 				BD2F2B5714D2B82200B4A6D1 /* PLLogo.h */,
 				BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */,
+				BD2F2B5D14D2E7FF00B4A6D1 /* PLListDetailView.h */,
+				BD2F2B5E14D2E7FF00B4A6D1 /* PLListDetailView.m */,
+				BD2F2B6314D2F31200B4A6D1 /* PLPhenomButton.h */,
+				BD2F2B6414D2F31200B4A6D1 /* PLPhenomButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -495,7 +512,6 @@
 				5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */,
 				5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */,
 				59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */,
-				59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */,
 				59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */,
 				BD2F2B2614D29DDB00B4A6D1 /* PLLoading_01@2x.png in Resources */,
 				BD2F2B2714D29DDB00B4A6D1 /* PLLoading_02@2x.png in Resources */,
@@ -585,6 +601,10 @@
 				BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */,
 				BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */,
 				BD2F2B5C14D2BAC100B4A6D1 /* PLListDetailParser.m in Sources */,
+				BD2F2B5F14D2E80000B4A6D1 /* PLListDetailView.m in Sources */,
+				BD2F2B6214D2F14F00B4A6D1 /* PLLabelHelper.m in Sources */,
+				BD2F2B6514D2F31200B4A6D1 /* PLPhenomButton.m in Sources */,
+				BD2F2B6814D3065400B4A6D1 /* PLPhenomController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

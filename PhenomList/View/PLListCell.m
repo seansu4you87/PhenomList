@@ -7,7 +7,14 @@
 //
 
 #import "PLListCell.h"
+
 #import "PLImageHelper.h"
+
+@interface PLListCell (private)
+
+- (void)setColorsForActive:(BOOL)active;
+
+@end
 
 @implementation PLListCell
 
@@ -28,13 +35,6 @@
         // Make Multiline
         self.textLabel.numberOfLines = 2;
         
-        //Label Color
-        self.textLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
-        
-        //Shadow
-        self.textLabel.shadowColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
-        self.textLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
-        
         // Make Font Smaller so it fits
         self.textLabel.font = [UIFont boldSystemFontOfSize: 16.0];
         
@@ -45,7 +45,7 @@
         // Set selection color
         self.selectedBackgroundView = [[UIImageView alloc] initWithImage:[PLImageHelper listCellSelectedImage]];
         
-        self.textLabel.highlightedTextColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
+        self.textLabel.highlightedTextColor = [UIColor whiteColor];
         
 	}
 	return self;
@@ -82,16 +82,25 @@
 	}
 }
 
-- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animate
+- (void)setColorsForActive:(BOOL)active
 {
-    UIColor * newShadow = highlighted ? [UIColor colorWithRed:0 green:0 blue:0 alpha:.1] : [UIColor whiteColor];
-    
-    
-    self.textLabel.shadowColor = newShadow;
-    
-    [super setHighlighted:highlighted animated:animate];
+    self.textLabel.shadowColor = active ? [UIColor darkGrayColor] : [UIColor whiteColor];;
+    self.textLabel.shadowOffset = active ? CGSizeMake(0, -0.5) : CGSizeMake(0, 0.5);
 }
 
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animate
+{
+    [super setHighlighted:highlighted animated:animate];
+    
+    [self setColorsForActive:highlighted];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected animated:animated];
+    
+    [self setColorsForActive:selected];
+}
 
 
 @end

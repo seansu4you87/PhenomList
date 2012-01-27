@@ -68,9 +68,8 @@
 {
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
-    
-    UIView *tableFooter = [[PLTableFooter alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    UIView *tableHeader = [PLTableHeader tableHeader];
+    UIView *tableFooter = [PLTableFooter tableFooter];
     
     self.tableView.tableHeaderView = tableHeader;
     self.tableView.tableFooterView = tableFooter;

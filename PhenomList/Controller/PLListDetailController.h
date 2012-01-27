@@ -6,14 +6,19 @@
 //  Copyright (c) 2012 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLTableViewController.h"
+#import <UIKit/UIKit.h>
 
 @class PLList;
+@class PLListDetailView;
 
-@interface PLListDetailController : PLTableViewController
+@interface PLListDetailController : UIViewController
 {
     PLList *list;
+    
+    PLListDetailView *detail_view;
 }
+
+@property(nonatomic, readonly) UIScrollView *scrollView;
 
 - (id)initWithList:(PLList *)theList;
 

@@ -10,4 +10,6 @@
 
 @interface PLTableFooter : UIView
 
++ (PLTableFooter *)tableFooter;
+
 @end

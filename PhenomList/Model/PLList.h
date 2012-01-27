@@ -8,6 +8,8 @@
 
 #import "PLObject.h"
 
+@class PLPhenom;
+
 @interface PLList : PLObject
 {
 	NSDate          *date_created;
@@ -24,5 +26,6 @@
 @property(nonatomic, strong, readonly) NSMutableArray *phenoms;
 
 - (void)fillWithDataFromList:(PLList *)list;
+- (PLPhenom *)phenomWithName:(NSString *)name;
 
 @end

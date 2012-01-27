@@ -7,9 +7,15 @@
 //
 
 #import "PLTableFooter.h"
+
 #import "PLImageHelper.h"
 
 @implementation PLTableFooter
+
++ (PLTableFooter *)tableFooter
+{
+    return [[PLTableFooter alloc] initWithFrame:CGRectMake(0, 0, 320, 280)];
+}
 
 -(id)initWithFrame:(CGRect)frame
 {

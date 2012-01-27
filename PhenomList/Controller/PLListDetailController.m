@@ -7,40 +7,87 @@
 //
 
 #import "PLListDetailController.h"
+#import "PLPhenomController.h"
+
 #import "PLList.h"
+#import "PLPhenom.h"
 #import "PLApplicationData.h"
 
+#import "PLListDetailView.h"
+#import "PLPhenomButton.h"
+
+@interface PLListDetailController (private)
+
+- (void)setData;
+
+@end
+
 @implementation PLListDetailController
+
+@dynamic scrollView;
 
 - (id)initWithList:(PLList *)theList
 {
     if (self = [super init])
     {
         list = theList;
-        self.title = list.title;
-        
-        self.dataState = PLDataStateLoading;
+        self.title = @"The Top";
         
         [[PLApplicationData singleton] getDetailForList:list successBlock:^(id result){
             
-            data = list.phenoms;
-            self.dataState = PLDataStateHasData;
+            [self setData];
             
         } andFailureBlock:^(NSError *error){
-            
-            self.dataState = PLDataStateNoResults;
             
         }];
     }
     return self;
 }
 
-- (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)loadView
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    cell.textLabel.text = [[data objectAtIndex:indexPath.row] name];
+    [super loadView];
     
-    return cell;
+    detail_view = [[PLListDetailView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    self.view = detail_view;
+    
+    [self setData];
+}
+
+#pragma mark - 
+#pragma mark Actions
+
+- (void)phenomButtonPressed:(id)sender
+{
+    PLPhenom *phenom = [list phenomWithName:[[sender titleLabel] text]];
+    
+    [self.navigationController pushViewController:[[PLPhenomController alloc] initWithPhenom:phenom] animated:YES];
+}
+
+#pragma mark - 
+#pragma mark Data Methods
+
+- (void)setData
+{
+    detail_view.title = list.title;
+    detail_view.summary = list.summary;
+    
+    for (int i = 0; i < [list.phenoms count]; i++)
+    {
+        PLPhenom *phenom = [list.phenoms objectAtIndex:i];
+        PLPhenomButton *button = [detail_view buttonAtIndex:i];
+        
+        [button setTitle:phenom.name forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(phenomButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+#pragma mark - 
+#pragma mark Setters and Getters
+
+- (UIScrollView *)scrollView
+{
+    return (UIScrollView *)self.view;
 }
 
 @end

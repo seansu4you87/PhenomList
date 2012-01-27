@@ -7,6 +7,7 @@
 //
 
 #import "PLList.h"
+#import "PLPhenom.h"
 
 @implementation PLList
 
@@ -40,6 +41,16 @@
         [self.phenoms removeAllObjects];
         [self.phenoms addObjectsFromArray:list.phenoms];
     }
+}
+
+- (PLPhenom *)phenomWithName:(NSString *)name
+{
+    for (PLPhenom *phenom in self.phenoms)
+    {
+        if ([phenom.name isEqualToString:name])
+            return phenom;
+    }
+    return nil;
 }
 
 @end

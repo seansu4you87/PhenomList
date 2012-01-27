@@ -7,9 +7,15 @@
 //
 
 #import "PLTableHeader.h"
+
 #import "PLImageHelper.h"
 
 @implementation PLTableHeader
+
++ (PLTableHeader *)tableHeader
+{
+    return [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, 320, 280)];
+}
 
 -(id)initWithFrame:(CGRect)frame
 {
