@@ -86,7 +86,7 @@
 
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    return 66;
 }
 
 
