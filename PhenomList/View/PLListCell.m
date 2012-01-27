@@ -7,7 +7,7 @@
 //
 
 #import "PLListCell.h"
-#import "PLListCellSelection.h"
+#import "PLImageHelper.h"
 
 @implementation PLListCell
 
@@ -37,16 +37,13 @@
         
         // Make Font Smaller so it fits
         self.textLabel.font = [UIFont boldSystemFontOfSize: 16.0];
-
+        
         // Custom BG
         self.textLabel.backgroundColor = [UIColor clearColor];        
-        self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLTableCell.png"]];
+        self.backgroundView = [[UIImageView alloc] initWithImage:[PLImageHelper listCellImage]];
         
         // Set selection color
-        //UIView *myBackView = [[PLListCellSelection alloc] initWithInnerShadowSize:CGSizeMake(0.0f, 0.0f) blur:3 rect:CGRectMake(0, 0, 320, 66) andColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:.1]];
-        //myBackView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-        //myBackView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.03];
-        //self.selectedBackgroundView = myBackView;
+        self.selectedBackgroundView = [[UIImageView alloc] initWithImage:[PLImageHelper listCellSelectedImage]];
         
         self.textLabel.highlightedTextColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
         

@@ -7,6 +7,7 @@
 //
 
 #import "PLTableFooter.h"
+#import "PLImageHelper.h"
 
 @implementation PLTableFooter
 
@@ -14,7 +15,7 @@
 {
     if (self = [super initWithFrame:frame])
 	{        
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"PLTableFooterImage.png"]];
+        self.backgroundColor = [UIColor colorWithPatternImage:[PLImageHelper tableFooterImage]];
 	}
 	return self;
 }

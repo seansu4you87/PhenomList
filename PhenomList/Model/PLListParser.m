@@ -8,6 +8,7 @@
 
 #import "PLListParser.h"
 #import "PLList.h"
+#import "PLDateHelper.h"
 
 @implementation PLListParser
 
@@ -42,6 +43,18 @@
     
     if ([theElement isEqualToString:@"title"])
         current_list.title = theContent;
+    
+    if ([theElement isEqualToString:@"created-at"])
+    {
+        NSDateFormatter *formatter = [PLDateHelper dateFormatter];
+        current_list.dateCreated = [formatter dateFromString:theContent];
+    }
+    
+    if ([theElement isEqualToString:@"updated-at"])
+    {
+        NSDateFormatter *formatter = [PLDateHelper dateFormatter];
+        current_list.dateUpdated = [formatter dateFromString:theContent];
+    }
 }
 
 #pragma mark - 
@@ -49,7 +62,11 @@
 
 - (id)data
 {
-    return [NSArray arrayWithArray:lists];
+    return [lists sortedArrayUsingComparator:^(id obj1, id obj2){
+        
+        return [[obj2 dateCreated] compare:[obj1 dateCreated]];
+        
+    }];
 }
 
 @end

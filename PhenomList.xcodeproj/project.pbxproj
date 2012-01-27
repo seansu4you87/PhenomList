@@ -16,10 +16,8 @@
 		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
 		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
 		AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DC14CD4B5B001F77C3 /* PLListCell.m */; };
-		AC5872E214CD4B5B001F77C3 /* PLListCellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */; };
 		AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */; };
 		AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872EA14CD4B9B001F77C3 /* HBAParser.m */; };
-		ACC48C3D14B68FA500285E3C /* PLArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3C14B68FA500285E3C /* PLArticleViewController.m */; };
 		ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFE114A48E6A004F914E /* PLRequest.m */; };
 		BD1C8F0B14A6B277005DAE02 /* PLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0A14A6B277005DAE02 /* PLParser.m */; };
 		BD1C8F0E14A6B299005DAE02 /* PLListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0D14A6B299005DAE02 /* PLListParser.m */; };
@@ -57,8 +55,11 @@
 		BD2F2B4314D29DDB00B4A6D1 /* PLTableFooterImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BD2F2B2314D29DDB00B4A6D1 /* PLTableFooterImage.png */; };
 		BD2F2B4414D29DDB00B4A6D1 /* PLTableFooterImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD2F2B2414D29DDB00B4A6D1 /* PLTableFooterImage@2x.png */; };
 		BD2F2B4514D29DDB00B4A6D1 /* PLTableHeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BD2F2B2514D29DDB00B4A6D1 /* PLTableHeaderImage.png */; };
+		BD2F2B4914D2A5CD00B4A6D1 /* PLDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */; };
+		BD2F2B4C14D2AB2D00B4A6D1 /* PLListDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */; };
+		BD2F2B5014D2B2CF00B4A6D1 /* PLImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */; };
 		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
-		BD33712A14A51E6900407496 /* PLListsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListsController.m */; };
+		BD33712A14A51E6900407496 /* PLListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListController.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
 		BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
 		BDE62B9B14A273F8003423CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9A14A273F8003423CA /* CoreGraphics.framework */; };
@@ -97,14 +98,10 @@
 		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
 		AC5872DB14CD4B5B001F77C3 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCell.h; path = View/PLListCell.h; sourceTree = "<group>"; };
 		AC5872DC14CD4B5B001F77C3 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCell.m; path = View/PLListCell.m; sourceTree = "<group>"; };
-		AC5872DD14CD4B5B001F77C3 /* PLListCellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCellSelection.h; path = View/PLListCellSelection.h; sourceTree = "<group>"; };
-		AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCellSelection.m; path = View/PLListCellSelection.m; sourceTree = "<group>"; };
 		AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableHeader.h; path = View/PLTableHeader.h; sourceTree = "<group>"; };
 		AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableHeader.m; path = View/PLTableHeader.m; sourceTree = "<group>"; };
 		AC5872E914CD4B9B001F77C3 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAParser.h; sourceTree = "<group>"; };
 		AC5872EA14CD4B9B001F77C3 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAParser.m; sourceTree = "<group>"; };
-		ACC48C3B14B68FA500285E3C /* PLArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLArticleViewController.h; path = Controller/PLArticleViewController.h; sourceTree = "<group>"; };
-		ACC48C3C14B68FA500285E3C /* PLArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLArticleViewController.m; path = Controller/PLArticleViewController.m; sourceTree = "<group>"; };
 		ACD0CFE014A48E6A004F914E /* PLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLRequest.h; path = Model/PLRequest.h; sourceTree = "<group>"; };
 		ACD0CFE114A48E6A004F914E /* PLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLRequest.m; path = Model/PLRequest.m; sourceTree = "<group>"; };
 		BD1C8F0914A6B277005DAE02 /* PLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLParser.h; path = Model/PLParser.h; sourceTree = "<group>"; };
@@ -147,10 +144,16 @@
 		BD2F2B2314D29DDB00B4A6D1 /* PLTableFooterImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLTableFooterImage.png; sourceTree = "<group>"; };
 		BD2F2B2414D29DDB00B4A6D1 /* PLTableFooterImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableFooterImage@2x.png"; sourceTree = "<group>"; };
 		BD2F2B2514D29DDB00B4A6D1 /* PLTableHeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLTableHeaderImage.png; sourceTree = "<group>"; };
+		BD2F2B4714D2A5CD00B4A6D1 /* PLDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLDateHelper.h; path = Helper/PLDateHelper.h; sourceTree = "<group>"; };
+		BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLDateHelper.m; path = Helper/PLDateHelper.m; sourceTree = "<group>"; };
+		BD2F2B4A14D2AB2D00B4A6D1 /* PLListDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListDetailController.h; path = Controller/PLListDetailController.h; sourceTree = "<group>"; };
+		BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListDetailController.m; path = Controller/PLListDetailController.m; sourceTree = "<group>"; };
+		BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLImageHelper.h; path = Helper/PLImageHelper.h; sourceTree = "<group>"; };
+		BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLImageHelper.m; path = Helper/PLImageHelper.m; sourceTree = "<group>"; };
 		BD33712414A5186B00407496 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableViewController.h; path = Controller/PLTableViewController.h; sourceTree = "<group>"; };
 		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
-		BD33712814A51E6900407496 /* PLListsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListsController.h; path = Controller/PLListsController.h; sourceTree = "<group>"; };
-		BD33712914A51E6900407496 /* PLListsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListsController.m; path = Controller/PLListsController.m; sourceTree = "<group>"; };
+		BD33712814A51E6900407496 /* PLListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListController.h; path = Controller/PLListController.h; sourceTree = "<group>"; };
+		BD33712914A51E6900407496 /* PLListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListController.m; path = Controller/PLListController.m; sourceTree = "<group>"; };
 		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -263,6 +266,17 @@
 			path = Lib/HBA;
 			sourceTree = "<group>";
 		};
+		BD2F2B4614D2A52000B4A6D1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BD2F2B4714D2A5CD00B4A6D1 /* PLDateHelper.h */,
+				BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */,
+				BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */,
+				BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		BDE62B8714A273F8003423CA = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +312,7 @@
 			children = (
 				5948E2A714C2A6D000E9ADEA /* assets */,
 				AC5872E414CD4B67001F77C3 /* Lib */,
+				BD2F2B4614D2A52000B4A6D1 /* Helper */,
 				BDE62BC514A2741C003423CA /* Model */,
 				BDE62BC714A2742A003423CA /* View */,
 				BDE62BC614A27426003423CA /* Controller */,
@@ -364,10 +379,10 @@
 			children = (
 				BD33712414A5186B00407496 /* PLTableViewController.h */,
 				BD33712514A5186B00407496 /* PLTableViewController.m */,
-				BD33712814A51E6900407496 /* PLListsController.h */,
-				BD33712914A51E6900407496 /* PLListsController.m */,
-				ACC48C3B14B68FA500285E3C /* PLArticleViewController.h */,
-				ACC48C3C14B68FA500285E3C /* PLArticleViewController.m */,
+				BD33712814A51E6900407496 /* PLListController.h */,
+				BD33712914A51E6900407496 /* PLListController.m */,
+				BD2F2B4A14D2AB2D00B4A6D1 /* PLListDetailController.h */,
+				BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -381,8 +396,6 @@
 				BD2F2B0014D29D0700B4A6D1 /* PLTableFooter.m */,
 				AC5872DB14CD4B5B001F77C3 /* PLListCell.h */,
 				AC5872DC14CD4B5B001F77C3 /* PLListCell.m */,
-				AC5872DD14CD4B5B001F77C3 /* PLListCellSelection.h */,
-				AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */,
 				AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */,
 				AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */,
 			);
@@ -542,16 +555,17 @@
 				AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */,
 				ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */,
 				BD33712614A5186B00407496 /* PLTableViewController.m in Sources */,
-				BD33712A14A51E6900407496 /* PLListsController.m in Sources */,
+				BD33712A14A51E6900407496 /* PLListController.m in Sources */,
 				BD1C8F0B14A6B277005DAE02 /* PLParser.m in Sources */,
 				BD1C8F0E14A6B299005DAE02 /* PLListParser.m in Sources */,
-				ACC48C3D14B68FA500285E3C /* PLArticleViewController.m in Sources */,
 				AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */,
-				AC5872E214CD4B5B001F77C3 /* PLListCellSelection.m in Sources */,
 				AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */,
 				AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */,
 				BD2F2B0314D29D0700B4A6D1 /* PLLoadingView.m in Sources */,
 				BD2F2B0414D29D0700B4A6D1 /* PLTableFooter.m in Sources */,
+				BD2F2B4914D2A5CD00B4A6D1 /* PLDateHelper.m in Sources */,
+				BD2F2B4C14D2AB2D00B4A6D1 /* PLListDetailController.m in Sources */,
+				BD2F2B5014D2B2CF00B4A6D1 /* PLImageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,26 +7,23 @@
 //
 
 #import "PLLoadingView.h"
+#import "PLImageHelper.h"
 
 @implementation PLLoadingView
 
--(id)initWithFrame:(CGRect)frame
+-(id)init
 {
-    if (self = [super initWithFrame:frame])
-	{                
+    UIImage *image = [PLImageHelper loadingImageForIndex:1];
+    if (self = [super initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)])
+	{               
         NSMutableArray *images = [NSMutableArray array];
         
         for (int i = 1; i < 26; i++)
         {
-            NSString *numString = (i < 10) ? @"0%i" : @"%i";
-            numString = [NSString stringWithFormat:numString, i];
-            
-            [images addObject:[UIImage imageNamed:[NSString stringWithFormat:@"PLLoading_%@", numString]]];
+            [images addObject:[PLImageHelper loadingImageForIndex:i]];
         }
         
-            
-        
-        UIImageView *myAnimatedView = [[UIImageView alloc] initWithFrame:frame];
+        UIImageView *myAnimatedView = [[UIImageView alloc] initWithFrame:self.bounds];
         myAnimatedView.animationImages = images; 
         myAnimatedView.animationDuration = 1.0f; // 4 seconds 
         myAnimatedView.animationRepeatCount = 0; // 0 = loops forever 

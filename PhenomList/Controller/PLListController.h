@@ -8,7 +8,7 @@
 
 #import "PLTableViewController.h"
 
-@interface PLListsController : PLTableViewController
+@interface PLListController : PLTableViewController
 {
     
 }

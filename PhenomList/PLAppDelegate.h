@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class PLListsController;
+@class PLListController;
 
 @interface PLAppDelegate : UIResponder <UIApplicationDelegate>
 {
-	PLListsController *list_controller;
+	PLListController *list_controller;
 	UINavigationController *nav_controller;
 }
 

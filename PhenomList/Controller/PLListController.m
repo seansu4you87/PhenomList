@@ -6,20 +6,20 @@
 //  Copyright (c) 2011 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLListsController.h"
+#import "PLListController.h"
 #import "PLRequest.h"
 #import "PLURL.h"
 #import "PLListParser.h"
 #import "PLList.h"
 #import "PLLoadingView.h"
 
-#import "PLArticleViewController.h"
+#import "PLListDetailController.h"
 #import "PLListCell.h"
 #import "PLTableHeader.h"
 #import "PLTableFooter.h"
-#import <UIKit/UIKit.h>
+#import "PLImageHelper.h"
 
-@implementation PLListsController
+@implementation PLListController
 
 - (id)init
 {
@@ -27,14 +27,14 @@
     {
         self.title = @"PhenomList";
         
-        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
+        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[PLImageHelper logoImage]];
         
         PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
         [request performRequestWithSuccessBlock:^(id result){
             
             data = result;
-            self.dataState = PLDataStateLoading;
-            //self.tableView.scrollEnabled = YES;
+            self.dataState = PLDataStateHasData;
+            self.tableView.scrollEnabled = YES;
 
             
         }andFailureBlock:^(NSError *error){
@@ -86,9 +86,8 @@
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PLArticleViewController *controller = [[PLArticleViewController alloc] init];
+    PLListDetailController *controller = [[PLListDetailController alloc] init];
 	
-	//UINavigationController *test = self.navigationController;
 	[self.navigationController pushViewController:controller animated:YES];
 }
 
@@ -105,9 +104,9 @@
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
     
-    PLLoadingView *loadingView = [[PLLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, self.tableView.frame.size.height)];
-    //loadingView.backgroundColor = [UIColor redColor];
+    PLLoadingView *loadingView = [[PLLoadingView alloc] init];
     [cell addSubview:loadingView];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

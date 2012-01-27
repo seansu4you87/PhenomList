@@ -7,8 +7,8 @@
 //
 
 #import "PLAppDelegate.h"
-
-#import "PLListsController.h"
+#import "PLListController.h"
+#import "PLImageHelper.h"
 
 @implementation PLAppDelegate
 
@@ -17,21 +17,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    list_controller = [[PLListsController alloc] init];
+    list_controller = [[PLListController alloc] init];
     nav_controller = [[UINavigationController alloc] initWithRootViewController:list_controller];
 	
     [self.window addSubview:nav_controller.view];
 	
-    UIImage *navigationBackground = [UIImage imageNamed:@"PLNavigationBar.png"];
+    UIImage *navigationBackground = [PLImageHelper navigationBarImage];
 
     [[UINavigationBar appearanceWhenContainedIn:[nav_controller class], nil] setBackgroundImage:navigationBackground forBarMetrics:UIBarMetricsDefault];
-    
+    [[UINavigationBar appearanceWhenContainedIn:[nav_controller class], nil] setTintColor:[UIColor colorWithRed:222.0/256 green:59.0/256 blue:15.0/256 alpha:1.0]];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
-
+    
     
     return YES;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "PLTableHeader.h"
+#import "PLImageHelper.h"
 
 @implementation PLTableHeader
 
@@ -14,7 +15,7 @@
 {
     if (self = [super initWithFrame:frame])
 	{        
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"PLTableHeaderImage.png"]];
+        self.backgroundColor = [UIColor colorWithPatternImage:[PLImageHelper tableHeaderImage]];
 	}
 	return self;
 }
