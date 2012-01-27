@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Blackboard Mobile. All rights reserved.
 //
 
-#import "HBAInlineScrollingViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface PLArticleViewController : HBAInlineScrollingViewController<HBAPaginatedViewScrollViewDataSource>
+@interface PLArticleViewController : UIViewController
 {
 	
 }

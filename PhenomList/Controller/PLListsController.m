@@ -49,7 +49,27 @@
     return self;
 }
 
+<<<<<<< HEAD
 -(void)viewDidLoad
+=======
+- (void)loadView
+{
+    [super loadView];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    self.tableView.tableHeaderView = tableHeader;
+    [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
+}
+
+/*- (NSInteger)numberOfDataSections
+>>>>>>> commit old work
 {
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -89,12 +109,21 @@
     return cell;
 }
 
+<<<<<<< HEAD
 /*
  - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
  {
  return 66;
  }
 */
+=======
+
+- (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
+>>>>>>> commit old work
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
