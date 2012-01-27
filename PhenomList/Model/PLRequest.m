@@ -7,12 +7,12 @@
 //
 
 #import "PLRequest.h"
-#import "PLURL.h"
+#import "PLUrlHelper.h"
 #import "PLParser.h"
 
 @implementation PLRequest
 
-- (id)initWithURL:(PLURL *)url andParserClass:(Class)parserClass
+- (id)initWithURL:(PLUrlHelper *)url andParserClass:(Class)parserClass
 {
 	if (self = [super init])
 	{

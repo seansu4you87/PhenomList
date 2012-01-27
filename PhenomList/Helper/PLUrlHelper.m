@@ -6,16 +6,16 @@
 //  Copyright (c) 2011 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLURL.h"
+#import "PLUrlHelper.h"
 
-@implementation PLURL
+@implementation PLUrlHelper
 
-+ (PLURL *)listsURL
++ (PLUrlHelper *)listsUrl
 {
 	return [NSURL URLWithString:@"http://phenomlist.com/api/lists"];
 }
 
-+ (PLURL *)listDetailURLForListID:(NSString *)listID
++ (PLUrlHelper *)listDetailUrlForListId:(NSString *)listID
 {
 	return [NSURL URLWithString:[NSString stringWithFormat:@"http://phenomlist.com/api/list/%@", listID]];
 }

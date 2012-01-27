@@ -7,17 +7,16 @@
 //
 
 #import "PLListController.h"
-#import "PLRequest.h"
-#import "PLURL.h"
-#import "PLListParser.h"
-#import "PLList.h"
-#import "PLLoadingView.h"
-
 #import "PLListDetailController.h"
+
+#import "PLApplicationData.h"
+#import "PLList.h"
+
+#import "PLLoadingView.h"
 #import "PLListCell.h"
 #import "PLTableHeader.h"
 #import "PLTableFooter.h"
-#import "PLImageHelper.h"
+#import "PLLogo.h"
 
 @implementation PLListController
 
@@ -27,10 +26,9 @@
     {
         self.title = @"PhenomList";
         
-        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[PLImageHelper logoImage]];
+        self.navigationItem.titleView = [PLLogo logo];
         
-        PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
-        [request performRequestWithSuccessBlock:^(id result){
+        [[PLApplicationData singleton] getListsWithSuccessBlock:^(id result){
             
             data = result;
             self.dataState = PLDataStateHasData;

@@ -14,7 +14,6 @@
 		59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */; };
 		59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F714CA153700775109 /* PLTableHeader@2x.png */; };
 		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
-		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
 		AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DC14CD4B5B001F77C3 /* PLListCell.m */; };
 		AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */; };
 		AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872EA14CD4B9B001F77C3 /* HBAParser.m */; };
@@ -58,6 +57,9 @@
 		BD2F2B4914D2A5CD00B4A6D1 /* PLDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */; };
 		BD2F2B4C14D2AB2D00B4A6D1 /* PLListDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */; };
 		BD2F2B5014D2B2CF00B4A6D1 /* PLImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */; };
+		BD2F2B5314D2B5D000B4A6D1 /* PLApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5214D2B5D000B4A6D1 /* PLApplicationData.m */; };
+		BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */; };
+		BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */; };
 		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
 		BD33712A14A51E6900407496 /* PLListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712914A51E6900407496 /* PLListController.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
@@ -94,8 +96,6 @@
 		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
 		59CC14F714CA153700775109 /* PLTableHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeader@2x.png"; sourceTree = "<group>"; };
 		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
-		AC0ED36614A4870B0095CD09 /* PLURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLURL.h; path = Model/PLURL.h; sourceTree = "<group>"; };
-		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
 		AC5872DB14CD4B5B001F77C3 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCell.h; path = View/PLListCell.h; sourceTree = "<group>"; };
 		AC5872DC14CD4B5B001F77C3 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCell.m; path = View/PLListCell.m; sourceTree = "<group>"; };
 		AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableHeader.h; path = View/PLTableHeader.h; sourceTree = "<group>"; };
@@ -150,6 +150,12 @@
 		BD2F2B4B14D2AB2D00B4A6D1 /* PLListDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListDetailController.m; path = Controller/PLListDetailController.m; sourceTree = "<group>"; };
 		BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLImageHelper.h; path = Helper/PLImageHelper.h; sourceTree = "<group>"; };
 		BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLImageHelper.m; path = Helper/PLImageHelper.m; sourceTree = "<group>"; };
+		BD2F2B5114D2B5D000B4A6D1 /* PLApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLApplicationData.h; path = Model/PLApplicationData.h; sourceTree = "<group>"; };
+		BD2F2B5214D2B5D000B4A6D1 /* PLApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLApplicationData.m; path = Model/PLApplicationData.m; sourceTree = "<group>"; };
+		BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLUrlHelper.m; path = Helper/PLUrlHelper.m; sourceTree = "<group>"; };
+		BD2F2B5514D2B76300B4A6D1 /* PLUrlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLUrlHelper.h; path = Helper/PLUrlHelper.h; sourceTree = "<group>"; };
+		BD2F2B5714D2B82200B4A6D1 /* PLLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLLogo.h; path = View/PLLogo.h; sourceTree = "<group>"; };
+		BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLLogo.m; path = View/PLLogo.m; sourceTree = "<group>"; };
 		BD33712414A5186B00407496 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableViewController.h; path = Controller/PLTableViewController.h; sourceTree = "<group>"; };
 		BD33712514A5186B00407496 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableViewController.m; path = Controller/PLTableViewController.m; sourceTree = "<group>"; };
 		BD33712814A51E6900407496 /* PLListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListController.h; path = Controller/PLListController.h; sourceTree = "<group>"; };
@@ -202,7 +208,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5948E2A714C2A6D000E9ADEA /* assets */ = {
+		5948E2A714C2A6D000E9ADEA /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */,
@@ -245,6 +251,7 @@
 				BD2F2B2514D29DDB00B4A6D1 /* PLTableHeaderImage.png */,
 				59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */,
 			);
+			name = Assets;
 			path = assets;
 			sourceTree = "<group>";
 		};
@@ -269,6 +276,8 @@
 		BD2F2B4614D2A52000B4A6D1 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BD2F2B5414D2B76200B4A6D1 /* PLUrlHelper.m */,
+				BD2F2B5514D2B76300B4A6D1 /* PLUrlHelper.h */,
 				BD2F2B4714D2A5CD00B4A6D1 /* PLDateHelper.h */,
 				BD2F2B4814D2A5CD00B4A6D1 /* PLDateHelper.m */,
 				BD2F2B4E14D2B2CF00B4A6D1 /* PLImageHelper.h */,
@@ -310,7 +319,7 @@
 		BDE62B9C14A273F8003423CA /* PhenomList */ = {
 			isa = PBXGroup;
 			children = (
-				5948E2A714C2A6D000E9ADEA /* assets */,
+				5948E2A714C2A6D000E9ADEA /* Assets */,
 				AC5872E414CD4B67001F77C3 /* Lib */,
 				BD2F2B4614D2A52000B4A6D1 /* Helper */,
 				BDE62BC514A2741C003423CA /* Model */,
@@ -356,14 +365,14 @@
 		BDE62BC514A2741C003423CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD2F2B5114D2B5D000B4A6D1 /* PLApplicationData.h */,
+				BD2F2B5214D2B5D000B4A6D1 /* PLApplicationData.m */,
 				BDE62BC814A27451003423CA /* PLObject.h */,
 				BDE62BC914A27451003423CA /* PLObject.m */,
 				BDE62BCB14A27477003423CA /* PLList.h */,
 				BDE62BCC14A27477003423CA /* PLList.m */,
 				BDE62BCE14A274AC003423CA /* PLPhenom.h */,
 				BDE62BCF14A274AC003423CA /* PLPhenom.m */,
-				AC0ED36614A4870B0095CD09 /* PLURL.h */,
-				AC0ED36714A4870B0095CD09 /* PLURL.m */,
 				ACD0CFE014A48E6A004F914E /* PLRequest.h */,
 				ACD0CFE114A48E6A004F914E /* PLRequest.m */,
 				BD1C8F0914A6B277005DAE02 /* PLParser.h */,
@@ -398,6 +407,8 @@
 				AC5872DC14CD4B5B001F77C3 /* PLListCell.m */,
 				AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */,
 				AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */,
+				BD2F2B5714D2B82200B4A6D1 /* PLLogo.h */,
+				BD2F2B5814D2B82300B4A6D1 /* PLLogo.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -552,7 +563,6 @@
 				BDE62BCA14A27451003423CA /* PLObject.m in Sources */,
 				BDE62BCD14A27477003423CA /* PLList.m in Sources */,
 				BDE62BD014A274AC003423CA /* PLPhenom.m in Sources */,
-				AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */,
 				ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */,
 				BD33712614A5186B00407496 /* PLTableViewController.m in Sources */,
 				BD33712A14A51E6900407496 /* PLListController.m in Sources */,
@@ -566,6 +576,9 @@
 				BD2F2B4914D2A5CD00B4A6D1 /* PLDateHelper.m in Sources */,
 				BD2F2B4C14D2AB2D00B4A6D1 /* PLListDetailController.m in Sources */,
 				BD2F2B5014D2B2CF00B4A6D1 /* PLImageHelper.m in Sources */,
+				BD2F2B5314D2B5D000B4A6D1 /* PLApplicationData.m in Sources */,
+				BD2F2B5614D2B76300B4A6D1 /* PLUrlHelper.m in Sources */,
+				BD2F2B5914D2B82300B4A6D1 /* PLLogo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
