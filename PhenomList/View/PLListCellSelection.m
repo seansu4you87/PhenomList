@@ -7,7 +7,6 @@
 //
 
 #import "PLListCellSelection.h"
-#import "InnerShadowDrawing.h"
 
 @implementation PLListCellSelection
 
@@ -36,7 +35,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    drawWithInnerShadow(rect, self.shadowSize, self.shadowBlur, self.shadowColor,
+    /*drawWithInnerShadow(rect, self.shadowSize, self.shadowBlur, self.shadowColor,
                         ^ {
                             CGContextFillRect(UIGraphicsGetCurrentContext(), CGRectMake(1, 1, rect.size.width-2, self.frame.size.height-2));
                         },
@@ -44,7 +43,7 @@
                             [[UIColor clearColor] set];
                             CGContextFillRect(UIGraphicsGetCurrentContext(), CGRectMake(1, 1, rect.size.width-2, self.frame.size.height-2));
                         });
-    [super drawRect:rect];
+    [super drawRect:rect];*/
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

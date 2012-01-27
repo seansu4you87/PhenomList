@@ -49,38 +49,13 @@
     return self;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void)viewDidLoad
-=======
-=======
->>>>>>> merging origin/master into mergefuckup
 - (void)loadView
 {
     [super loadView];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
-    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
-    self.tableView.tableHeaderView = tableHeader;
-    [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
-}
-
-/*- (NSInteger)numberOfDataSections
-<<<<<<< HEAD
->>>>>>> commit old work
-=======
-=======
 -(void)viewDidLoad
->>>>>>> origin/master
->>>>>>> merging origin/master into mergefuckup
 {
-    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
@@ -94,20 +69,6 @@
     
 }
 
-#pragma mark - 
-#pragma mark Data Stuff
-
-
-/*- (NSInteger)numberOfDataSections
- {
- return 1;
- }
- 
- - (NSInteger)numberOfDataRowsInSection:(NSInteger)section
- {
- return 1;
- }*/
-
 - (UITableViewCell *)dataCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PLList *list = [data objectAtIndex:indexPath.row];
@@ -118,35 +79,10 @@
     return cell;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*
- - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
- {
- return 66;
- }
-*/
-=======
-=======
->>>>>>> merging origin/master into mergefuckup
-
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 66;
 }
-
-<<<<<<< HEAD
->>>>>>> commit old work
-=======
-=======
-/*
- - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
- {
- return 66;
- }
-*/
->>>>>>> origin/master
->>>>>>> merging origin/master into mergefuckup
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
