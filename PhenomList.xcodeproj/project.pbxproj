@@ -7,42 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5900996314C68A530086B290 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5900996214C68A530086B290 /* PLListCell.m */; };
 		5948E2AC14C2A6D000E9ADEA /* PhotoFrameSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */; };
 		5948E2AD14C2A6D000E9ADEA /* PLLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */; };
 		5948E2AE14C2A6D000E9ADEA /* PLNavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */; };
 		5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */; };
-		59CC14C114C9FB8F00775109 /* InnerShadowDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */; };
-		59CC14C514C9FEDD00775109 /* PLListCellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14C414C9FEDD00775109 /* PLListCellSelection.m */; };
 		59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */; };
-		59CC14F014CA10FE00775109 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CC14EF14CA10FE00775109 /* PLTableHeader.m */; };
 		59CC14F814CA153700775109 /* PLTableHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F714CA153700775109 /* PLTableHeader@2x.png */; };
 		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
 		AC0ED36814A4870B0095CD09 /* PLURL.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0ED36714A4870B0095CD09 /* PLURL.m */; };
-		ACC48C0A14B6853900285E3C /* HBAInlineScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFA14B6853900285E3C /* HBAInlineScrollingViewController.m */; };
-		ACC48C0B14B6853900285E3C /* HBAPaginatedPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFC14B6853900285E3C /* HBAPaginatedPageView.m */; };
-		ACC48C0C14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48BFF14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.m */; };
-		ACC48C0D14B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C0114B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.m */; };
-		ACC48C0E14B6853900285E3C /* HBAPaginatedInnerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C0314B6853900285E3C /* HBAPaginatedInnerPageView.m */; };
-		ACC48C0F14B6853900285E3C /* HBAPaginatedInnerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C0514B6853900285E3C /* HBAPaginatedInnerScrollView.m */; };
-		ACC48C1014B6853900285E3C /* HBAPaginatedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C0714B6853900285E3C /* HBAPaginatedScrollView.m */; };
-		ACC48C1114B6853900285E3C /* HBAPaginatedViewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C0914B6853900285E3C /* HBAPaginatedViewScrollView.m */; };
-		ACC48C1514B68C0C00285E3C /* HBAContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C1414B68C0C00285E3C /* HBAContentMode.m */; };
-		ACC48C1814B68C4800285E3C /* HBAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C1714B68C4800285E3C /* HBAUtility.m */; };
-		ACC48C2414B68CAD00285E3C /* HBAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C1B14B68CAD00285E3C /* HBAAnimation.m */; };
-		ACC48C2514B68CAD00285E3C /* HBAAnimationParallel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C1D14B68CAD00285E3C /* HBAAnimationParallel.m */; };
-		ACC48C2614B68CAD00285E3C /* HBAAnimationSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C1F14B68CAD00285E3C /* HBAAnimationSequence.m */; };
-		ACC48C2714B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C2114B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.m */; };
-		ACC48C2814B68CAD00285E3C /* HBAViewTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C2314B68CAD00285E3C /* HBAViewTransitionAnimation.m */; };
-		ACC48C2B14B68CF000285E3C /* HBALogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C2A14B68CEF00285E3C /* HBALogger.m */; };
-		ACC48C2E14B68D0F00285E3C /* HBAViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C2D14B68D0F00285E3C /* HBAViewGeometry.m */; };
-		ACC48C3114B68DAE00285E3C /* HBAViewInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3014B68DAE00285E3C /* HBAViewInspector.m */; };
-		ACC48C3414B68E0000285E3C /* HBACaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3314B68E0000285E3C /* HBACaptionView.m */; };
-		ACC48C3714B68E3E00285E3C /* HBAFullscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3614B68E3D00285E3C /* HBAFullscreenViewController.m */; };
-		ACC48C3A14B68EEE00285E3C /* HBANotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3914B68EED00285E3C /* HBANotificationCenter.m */; };
+		AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DC14CD4B5B001F77C3 /* PLListCell.m */; };
+		AC5872E214CD4B5B001F77C3 /* PLListCellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */; };
+		AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */; };
+		AC5872E714CD4B72001F77C3 /* InnerShadowDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E614CD4B72001F77C3 /* InnerShadowDrawing.m */; };
+		AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872EA14CD4B9B001F77C3 /* HBAParser.m */; };
 		ACC48C3D14B68FA500285E3C /* PLArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC48C3C14B68FA500285E3C /* PLArticleViewController.m */; };
 		ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFE114A48E6A004F914E /* PLRequest.m */; };
-		BD1C8F0814A6B23D005DAE02 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0714A6B23D005DAE02 /* HBAParser.m */; };
 		BD1C8F0B14A6B277005DAE02 /* PLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0A14A6B277005DAE02 /* PLParser.m */; };
 		BD1C8F0E14A6B299005DAE02 /* PLListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0D14A6B299005DAE02 /* PLListParser.m */; };
 		BD33712614A5186B00407496 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33712514A5186B00407496 /* PLTableViewController.m */; };
@@ -74,71 +53,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5900996114C68A530086B290 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLListCell.h; sourceTree = "<group>"; };
-		5900996214C68A530086B290 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLListCell.m; sourceTree = "<group>"; };
 		5948E2A814C2A6D000E9ADEA /* PhotoFrameSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoFrameSmall@2x.png"; sourceTree = "<group>"; };
 		5948E2A914C2A6D000E9ADEA /* PLLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLLogo@2x.png"; sourceTree = "<group>"; };
 		5948E2AA14C2A6D000E9ADEA /* PLNavigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLNavigationBar@2x.png"; sourceTree = "<group>"; };
 		5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCell@2x.png"; sourceTree = "<group>"; };
-		59CC14BF14C9FB8F00775109 /* InnerShadowDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerShadowDrawing.h; sourceTree = "<group>"; };
-		59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerShadowDrawing.m; sourceTree = "<group>"; };
-		59CC14C314C9FEDD00775109 /* PLListCellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLListCellSelection.h; sourceTree = "<group>"; };
-		59CC14C414C9FEDD00775109 /* PLListCellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLListCellSelection.m; sourceTree = "<group>"; };
 		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
-		59CC14EE14CA10FE00775109 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableHeader.h; sourceTree = "<group>"; };
-		59CC14EF14CA10FE00775109 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableHeader.m; sourceTree = "<group>"; };
 		59CC14F714CA153700775109 /* PLTableHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeader@2x.png"; sourceTree = "<group>"; };
 		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
 		AC0ED36614A4870B0095CD09 /* PLURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLURL.h; path = Model/PLURL.h; sourceTree = "<group>"; };
 		AC0ED36714A4870B0095CD09 /* PLURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLURL.m; path = Model/PLURL.m; sourceTree = "<group>"; };
-		ACC48BF914B6853900285E3C /* HBAInlineScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAInlineScrollingViewController.h; sourceTree = "<group>"; };
-		ACC48BFA14B6853900285E3C /* HBAInlineScrollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAInlineScrollingViewController.m; sourceTree = "<group>"; };
-		ACC48BFB14B6853900285E3C /* HBAPaginatedPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedPageView.h; sourceTree = "<group>"; };
-		ACC48BFC14B6853900285E3C /* HBAPaginatedPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedPageView.m; sourceTree = "<group>"; };
-		ACC48BFE14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedInnerFullScreenTransitionManager.h; sourceTree = "<group>"; };
-		ACC48BFF14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedInnerFullScreenTransitionManager.m; sourceTree = "<group>"; };
-		ACC48C0014B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedInnerPageContentContainerView.h; sourceTree = "<group>"; };
-		ACC48C0114B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedInnerPageContentContainerView.m; sourceTree = "<group>"; };
-		ACC48C0214B6853900285E3C /* HBAPaginatedInnerPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedInnerPageView.h; sourceTree = "<group>"; };
-		ACC48C0314B6853900285E3C /* HBAPaginatedInnerPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedInnerPageView.m; sourceTree = "<group>"; };
-		ACC48C0414B6853900285E3C /* HBAPaginatedInnerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedInnerScrollView.h; sourceTree = "<group>"; };
-		ACC48C0514B6853900285E3C /* HBAPaginatedInnerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedInnerScrollView.m; sourceTree = "<group>"; };
-		ACC48C0614B6853900285E3C /* HBAPaginatedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedScrollView.h; sourceTree = "<group>"; };
-		ACC48C0714B6853900285E3C /* HBAPaginatedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedScrollView.m; sourceTree = "<group>"; };
-		ACC48C0814B6853900285E3C /* HBAPaginatedViewScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPaginatedViewScrollView.h; sourceTree = "<group>"; };
-		ACC48C0914B6853900285E3C /* HBAPaginatedViewScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPaginatedViewScrollView.m; sourceTree = "<group>"; };
-		ACC48C1314B68C0C00285E3C /* HBAContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAContentMode.h; sourceTree = "<group>"; };
-		ACC48C1414B68C0C00285E3C /* HBAContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAContentMode.m; sourceTree = "<group>"; };
-		ACC48C1614B68C4800285E3C /* HBAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAUtility.h; sourceTree = "<group>"; };
-		ACC48C1714B68C4800285E3C /* HBAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAUtility.m; sourceTree = "<group>"; };
-		ACC48C1A14B68CAD00285E3C /* HBAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAAnimation.h; sourceTree = "<group>"; };
-		ACC48C1B14B68CAD00285E3C /* HBAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAAnimation.m; sourceTree = "<group>"; };
-		ACC48C1C14B68CAD00285E3C /* HBAAnimationParallel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAAnimationParallel.h; sourceTree = "<group>"; };
-		ACC48C1D14B68CAD00285E3C /* HBAAnimationParallel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAAnimationParallel.m; sourceTree = "<group>"; };
-		ACC48C1E14B68CAD00285E3C /* HBAAnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAAnimationSequence.h; sourceTree = "<group>"; };
-		ACC48C1F14B68CAD00285E3C /* HBAAnimationSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAAnimationSequence.m; sourceTree = "<group>"; };
-		ACC48C2014B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAFullscreenViewTransitionAnimation.h; sourceTree = "<group>"; };
-		ACC48C2114B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAFullscreenViewTransitionAnimation.m; sourceTree = "<group>"; };
-		ACC48C2214B68CAD00285E3C /* HBAViewTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAViewTransitionAnimation.h; sourceTree = "<group>"; };
-		ACC48C2314B68CAD00285E3C /* HBAViewTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAViewTransitionAnimation.m; sourceTree = "<group>"; };
-		ACC48C2914B68CEF00285E3C /* HBALogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALogger.h; sourceTree = "<group>"; };
-		ACC48C2A14B68CEF00285E3C /* HBALogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALogger.m; sourceTree = "<group>"; };
-		ACC48C2C14B68D0F00285E3C /* HBAViewGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAViewGeometry.h; sourceTree = "<group>"; };
-		ACC48C2D14B68D0F00285E3C /* HBAViewGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAViewGeometry.m; sourceTree = "<group>"; };
-		ACC48C2F14B68DAD00285E3C /* HBAViewInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAViewInspector.h; sourceTree = "<group>"; };
-		ACC48C3014B68DAE00285E3C /* HBAViewInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAViewInspector.m; sourceTree = "<group>"; };
-		ACC48C3214B68DFF00285E3C /* HBACaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBACaptionView.h; sourceTree = "<group>"; };
-		ACC48C3314B68E0000285E3C /* HBACaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBACaptionView.m; sourceTree = "<group>"; };
-		ACC48C3514B68E3D00285E3C /* HBAFullscreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAFullscreenViewController.h; sourceTree = "<group>"; };
-		ACC48C3614B68E3D00285E3C /* HBAFullscreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAFullscreenViewController.m; sourceTree = "<group>"; };
-		ACC48C3814B68EED00285E3C /* HBANotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBANotificationCenter.h; sourceTree = "<group>"; };
-		ACC48C3914B68EED00285E3C /* HBANotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBANotificationCenter.m; sourceTree = "<group>"; };
+		AC5872DB14CD4B5B001F77C3 /* PLListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCell.h; path = View/PLListCell.h; sourceTree = "<group>"; };
+		AC5872DC14CD4B5B001F77C3 /* PLListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCell.m; path = View/PLListCell.m; sourceTree = "<group>"; };
+		AC5872DD14CD4B5B001F77C3 /* PLListCellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListCellSelection.h; path = View/PLListCellSelection.h; sourceTree = "<group>"; };
+		AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLListCellSelection.m; path = View/PLListCellSelection.m; sourceTree = "<group>"; };
+		AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLTableHeader.h; path = View/PLTableHeader.h; sourceTree = "<group>"; };
+		AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableHeader.m; path = View/PLTableHeader.m; sourceTree = "<group>"; };
+		AC5872E514CD4B72001F77C3 /* InnerShadowDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InnerShadowDrawing.h; path = Lib/InnerShadowDrawing.h; sourceTree = "<group>"; };
+		AC5872E614CD4B72001F77C3 /* InnerShadowDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InnerShadowDrawing.m; path = Lib/InnerShadowDrawing.m; sourceTree = "<group>"; };
+		AC5872E914CD4B9B001F77C3 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAParser.h; sourceTree = "<group>"; };
+		AC5872EA14CD4B9B001F77C3 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAParser.m; sourceTree = "<group>"; };
 		ACC48C3B14B68FA500285E3C /* PLArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLArticleViewController.h; path = Controller/PLArticleViewController.h; sourceTree = "<group>"; };
 		ACC48C3C14B68FA500285E3C /* PLArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLArticleViewController.m; path = Controller/PLArticleViewController.m; sourceTree = "<group>"; };
 		ACD0CFE014A48E6A004F914E /* PLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLRequest.h; path = Model/PLRequest.h; sourceTree = "<group>"; };
 		ACD0CFE114A48E6A004F914E /* PLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLRequest.m; path = Model/PLRequest.m; sourceTree = "<group>"; };
-		BD1C8F0614A6B23D005DAE02 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HBAParser.h; path = HBA/HBAParser.h; sourceTree = "<group>"; };
-		BD1C8F0714A6B23D005DAE02 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HBAParser.m; path = HBA/HBAParser.m; sourceTree = "<group>"; };
 		BD1C8F0914A6B277005DAE02 /* PLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLParser.h; path = Model/PLParser.h; sourceTree = "<group>"; };
 		BD1C8F0A14A6B277005DAE02 /* PLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLParser.m; path = Model/PLParser.m; sourceTree = "<group>"; };
 		BD1C8F0C14A6B299005DAE02 /* PLListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLListParser.h; path = Model/PLListParser.h; sourceTree = "<group>"; };
@@ -209,79 +146,24 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
-		ACC48BF814B6853900285E3C /* AppStoreView */ = {
+		AC5872E414CD4B67001F77C3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				ACC48C3814B68EED00285E3C /* HBANotificationCenter.h */,
-				ACC48C3914B68EED00285E3C /* HBANotificationCenter.m */,
-				ACC48C3514B68E3D00285E3C /* HBAFullscreenViewController.h */,
-				ACC48C3614B68E3D00285E3C /* HBAFullscreenViewController.m */,
-				ACC48C3214B68DFF00285E3C /* HBACaptionView.h */,
-				ACC48C3314B68E0000285E3C /* HBACaptionView.m */,
-				ACC48C2F14B68DAD00285E3C /* HBAViewInspector.h */,
-				ACC48C3014B68DAE00285E3C /* HBAViewInspector.m */,
-				ACC48C2C14B68D0F00285E3C /* HBAViewGeometry.h */,
-				ACC48C2D14B68D0F00285E3C /* HBAViewGeometry.m */,
-				ACC48C2914B68CEF00285E3C /* HBALogger.h */,
-				ACC48C2A14B68CEF00285E3C /* HBALogger.m */,
-				ACC48C1914B68CAD00285E3C /* Animation */,
-				ACC48C1614B68C4800285E3C /* HBAUtility.h */,
-				ACC48C1714B68C4800285E3C /* HBAUtility.m */,
-				ACC48C1314B68C0C00285E3C /* HBAContentMode.h */,
-				ACC48C1414B68C0C00285E3C /* HBAContentMode.m */,
-				ACC48BF914B6853900285E3C /* HBAInlineScrollingViewController.h */,
-				ACC48BFA14B6853900285E3C /* HBAInlineScrollingViewController.m */,
-				ACC48BFB14B6853900285E3C /* HBAPaginatedPageView.h */,
-				ACC48BFC14B6853900285E3C /* HBAPaginatedPageView.m */,
-				ACC48BFD14B6853900285E3C /* HBAPaginatedScrollView (Private) */,
-				ACC48C0614B6853900285E3C /* HBAPaginatedScrollView.h */,
-				ACC48C0714B6853900285E3C /* HBAPaginatedScrollView.m */,
-				ACC48C0814B6853900285E3C /* HBAPaginatedViewScrollView.h */,
-				ACC48C0914B6853900285E3C /* HBAPaginatedViewScrollView.m */,
+				AC5872E814CD4B9B001F77C3 /* HBA */,
+				AC5872E514CD4B72001F77C3 /* InnerShadowDrawing.h */,
+				AC5872E614CD4B72001F77C3 /* InnerShadowDrawing.m */,
 			);
-			path = AppStoreView;
+			name = Lib;
 			sourceTree = "<group>";
 		};
-		ACC48BFD14B6853900285E3C /* HBAPaginatedScrollView (Private) */ = {
+		AC5872E814CD4B9B001F77C3 /* HBA */ = {
 			isa = PBXGroup;
 			children = (
-				ACC48BFE14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.h */,
-				ACC48BFF14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.m */,
-				ACC48C0014B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.h */,
-				ACC48C0114B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.m */,
-				ACC48C0214B6853900285E3C /* HBAPaginatedInnerPageView.h */,
-				ACC48C0314B6853900285E3C /* HBAPaginatedInnerPageView.m */,
-				ACC48C0414B6853900285E3C /* HBAPaginatedInnerScrollView.h */,
-				ACC48C0514B6853900285E3C /* HBAPaginatedInnerScrollView.m */,
-			);
-			path = "HBAPaginatedScrollView (Private)";
-			sourceTree = "<group>";
-		};
-		ACC48C1914B68CAD00285E3C /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				ACC48C1A14B68CAD00285E3C /* HBAAnimation.h */,
-				ACC48C1B14B68CAD00285E3C /* HBAAnimation.m */,
-				ACC48C1C14B68CAD00285E3C /* HBAAnimationParallel.h */,
-				ACC48C1D14B68CAD00285E3C /* HBAAnimationParallel.m */,
-				ACC48C1E14B68CAD00285E3C /* HBAAnimationSequence.h */,
-				ACC48C1F14B68CAD00285E3C /* HBAAnimationSequence.m */,
-				ACC48C2014B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.h */,
-				ACC48C2114B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.m */,
-				ACC48C2214B68CAD00285E3C /* HBAViewTransitionAnimation.h */,
-				ACC48C2314B68CAD00285E3C /* HBAViewTransitionAnimation.m */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
-		BD1C8EFF14A6B164005DAE02 /* HBA */ = {
-			isa = PBXGroup;
-			children = (
-				ACC48BF814B6853900285E3C /* AppStoreView */,
-				BD1C8F0614A6B23D005DAE02 /* HBAParser.h */,
-				BD1C8F0714A6B23D005DAE02 /* HBAParser.m */,
+				AC5872E914CD4B9B001F77C3 /* HBAParser.h */,
+				AC5872EA14CD4B9B001F77C3 /* HBAParser.m */,
 			);
 			name = HBA;
+			path = Lib/HBA;
 			sourceTree = "<group>";
 		};
 		BDE62B8714A273F8003423CA = {
@@ -318,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				5948E2A714C2A6D000E9ADEA /* assets */,
-				BD1C8EFF14A6B164005DAE02 /* HBA */,
+				AC5872E414CD4B67001F77C3 /* Lib */,
 				BDE62BC514A2741C003423CA /* Model */,
 				BDE62BC714A2742A003423CA /* View */,
 				BDE62BC614A27426003423CA /* Controller */,
@@ -396,14 +278,12 @@
 		BDE62BC714A2742A003423CA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59CC14BF14C9FB8F00775109 /* InnerShadowDrawing.h */,
-				59CC14C014C9FB8F00775109 /* InnerShadowDrawing.m */,
-				5900996114C68A530086B290 /* PLListCell.h */,
-				5900996214C68A530086B290 /* PLListCell.m */,
-				59CC14C314C9FEDD00775109 /* PLListCellSelection.h */,
-				59CC14C414C9FEDD00775109 /* PLListCellSelection.m */,
-				59CC14EE14CA10FE00775109 /* PLTableHeader.h */,
-				59CC14EF14CA10FE00775109 /* PLTableHeader.m */,
+				AC5872DB14CD4B5B001F77C3 /* PLListCell.h */,
+				AC5872DC14CD4B5B001F77C3 /* PLListCell.m */,
+				AC5872DD14CD4B5B001F77C3 /* PLListCellSelection.h */,
+				AC5872DE14CD4B5B001F77C3 /* PLListCellSelection.m */,
+				AC5872DF14CD4B5B001F77C3 /* PLTableHeader.h */,
+				AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -530,35 +410,14 @@
 				ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */,
 				BD33712614A5186B00407496 /* PLTableViewController.m in Sources */,
 				BD33712A14A51E6900407496 /* PLListsController.m in Sources */,
-				BD1C8F0814A6B23D005DAE02 /* HBAParser.m in Sources */,
 				BD1C8F0B14A6B277005DAE02 /* PLParser.m in Sources */,
 				BD1C8F0E14A6B299005DAE02 /* PLListParser.m in Sources */,
-				ACC48C0A14B6853900285E3C /* HBAInlineScrollingViewController.m in Sources */,
-				ACC48C0B14B6853900285E3C /* HBAPaginatedPageView.m in Sources */,
-				ACC48C0C14B6853900285E3C /* HBAPaginatedInnerFullScreenTransitionManager.m in Sources */,
-				ACC48C0D14B6853900285E3C /* HBAPaginatedInnerPageContentContainerView.m in Sources */,
-				ACC48C0E14B6853900285E3C /* HBAPaginatedInnerPageView.m in Sources */,
-				ACC48C0F14B6853900285E3C /* HBAPaginatedInnerScrollView.m in Sources */,
-				ACC48C1014B6853900285E3C /* HBAPaginatedScrollView.m in Sources */,
-				ACC48C1114B6853900285E3C /* HBAPaginatedViewScrollView.m in Sources */,
-				ACC48C1514B68C0C00285E3C /* HBAContentMode.m in Sources */,
-				ACC48C1814B68C4800285E3C /* HBAUtility.m in Sources */,
-				ACC48C2414B68CAD00285E3C /* HBAAnimation.m in Sources */,
-				ACC48C2514B68CAD00285E3C /* HBAAnimationParallel.m in Sources */,
-				ACC48C2614B68CAD00285E3C /* HBAAnimationSequence.m in Sources */,
-				ACC48C2714B68CAD00285E3C /* HBAFullscreenViewTransitionAnimation.m in Sources */,
-				ACC48C2814B68CAD00285E3C /* HBAViewTransitionAnimation.m in Sources */,
-				ACC48C2B14B68CF000285E3C /* HBALogger.m in Sources */,
-				ACC48C2E14B68D0F00285E3C /* HBAViewGeometry.m in Sources */,
-				ACC48C3114B68DAE00285E3C /* HBAViewInspector.m in Sources */,
-				ACC48C3414B68E0000285E3C /* HBACaptionView.m in Sources */,
-				ACC48C3714B68E3E00285E3C /* HBAFullscreenViewController.m in Sources */,
-				ACC48C3A14B68EEE00285E3C /* HBANotificationCenter.m in Sources */,
 				ACC48C3D14B68FA500285E3C /* PLArticleViewController.m in Sources */,
-				5900996314C68A530086B290 /* PLListCell.m in Sources */,
-				59CC14C114C9FB8F00775109 /* InnerShadowDrawing.m in Sources */,
-				59CC14C514C9FEDD00775109 /* PLListCellSelection.m in Sources */,
-				59CC14F014CA10FE00775109 /* PLTableHeader.m in Sources */,
+				AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */,
+				AC5872E214CD4B5B001F77C3 /* PLListCellSelection.m in Sources */,
+				AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */,
+				AC5872E714CD4B72001F77C3 /* InnerShadowDrawing.m in Sources */,
+				AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

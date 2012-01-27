@@ -25,13 +25,6 @@
     {
         self.title = @"PhenomList";
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
-        self.tableView.tableHeaderView = tableHeader;
-        [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
-
-        
         self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"PLLogo.png"]];
         
         PLRequest *request = [[PLRequest alloc] initWithURL:[PLURL listsURL] andParserClass:[PLListParser class]];
@@ -49,6 +42,22 @@
         self.dataState = PLDataStateLoading;
     }
     return self;
+}
+
+- (void)loadView
+{
+    [super loadView];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIView *tableHeader = [[PLTableHeader alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 280)];
+    self.tableView.tableHeaderView = tableHeader;
+    [self.tableView setContentInset:UIEdgeInsetsMake(-tableHeader.bounds.size.height, 0.0f, 0.0f, 0.0f)];
 }
 
 /*- (NSInteger)numberOfDataSections
@@ -74,12 +83,12 @@
     return cell;
 }
 
-/*
+
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 66;
+    return 44;
 }
-*/
+
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
