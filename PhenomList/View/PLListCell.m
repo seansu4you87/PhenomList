@@ -18,19 +18,18 @@
 
 @implementation PLListCell
 
-@synthesize titleLabel = title_label;
-
-
-- (id)initWithLabel:(NSString *)label andImages:(NSArray *)imageArray
+- (id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle andImages:(NSArray *)imageArray
 {
-	if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"])
+	if (self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"])
 	{
         
         image_width = 60;
         
-        // Set Label
-        self.titleLabel = label;
-        self.textLabel.text = self.titleLabel;
+        // Set title
+        self.textLabel.text = title;
+		
+		// Set subtitle
+		self.detailTextLabel.text = subtitle;
         
         // Make Multiline
         self.textLabel.numberOfLines = 2;
@@ -39,7 +38,8 @@
         self.textLabel.font = [UIFont boldSystemFontOfSize: 16.0];
         
         // Custom BG
-        self.textLabel.backgroundColor = [UIColor clearColor];        
+        //self.textLabel.backgroundColor = [UIColor redColor];        
+		//self.detailTextLabel.backgroundColor = [UIColor blueColor];
         self.backgroundView = [[UIImageView alloc] initWithImage:[PLImageHelper listCellImage]];
         
         // Set selection color
@@ -59,7 +59,6 @@
 - (void)layoutSubviews 
 {    
     [super layoutSubviews];
-	
 	// getting the cell size
     CGRect contentRect = self.contentView.bounds;
 	
@@ -77,8 +76,10 @@
 		 make the label 20 pixels high
          */
         
-		frame = CGRectMake(boundsX + image_width, 0, self.frame.size.width - (image_width + 10), self.frame.size.height);
+		frame = CGRectMake(boundsX + image_width, 0, self.frame.size.width - (image_width + 10), self.frame.size.height / 2.0);
 		self.textLabel.frame = frame;
+		
+		self.detailTextLabel.frame = CGRectMake(frame.origin.x, CGRectGetMaxY(frame) + 10, frame.size.width, frame.size.height);
 	}
 }
 

@@ -10,14 +10,9 @@
 
 @interface PLListCell : UITableViewCell    
 {
-    NSString *title_label;
-    
     CGFloat image_width;
 }
 
-
-- (id)initWithLabel:(NSString *)label andImages:(NSArray *)imageArray;
-
-@property (nonatomic, retain) NSString *titleLabel;
+- (id)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle andImages:(NSArray *)imageArray;
 
 @end

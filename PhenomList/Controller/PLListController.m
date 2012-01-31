@@ -12,6 +12,8 @@
 #import "PLApplicationData.h"
 #import "PLList.h"
 
+#import "NSDate+Formatting.h"
+
 #import "PLLoadingView.h"
 #import "PLListCell.h"
 #import "PLTableHeader.h"
@@ -81,15 +83,13 @@
 {
     PLList *list = [self listForIndexPath:indexPath];
     
-    UITableViewCell *cell = [[PLListCell alloc] 
-                             initWithLabel:list.title 
-                             andImages:[NSArray arrayWithObjects: nil]];
+    UITableViewCell *cell = [[PLListCell alloc] initWithTitle:list.title subtitle:[list.dateCreated timeAgoInWords] andImages:nil];
     return cell;
 }
 
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 66;
+    return 100;
 }
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath

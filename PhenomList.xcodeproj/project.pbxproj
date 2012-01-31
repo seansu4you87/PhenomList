@@ -16,6 +16,7 @@
 		AC5872E114CD4B5B001F77C3 /* PLListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872DC14CD4B5B001F77C3 /* PLListCell.m */; };
 		AC5872E314CD4B5B001F77C3 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */; };
 		AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872EA14CD4B9B001F77C3 /* HBAParser.m */; };
+		ACACC5FD14D7A16E006040F5 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5FC14D7A16E006040F5 /* NSDate+Formatting.m */; };
 		ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFE114A48E6A004F914E /* PLRequest.m */; };
 		BD1C8F0B14A6B277005DAE02 /* PLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0A14A6B277005DAE02 /* PLParser.m */; };
 		BD1C8F0E14A6B299005DAE02 /* PLListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1C8F0D14A6B299005DAE02 /* PLListParser.m */; };
@@ -105,6 +106,8 @@
 		AC5872E014CD4B5B001F77C3 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLTableHeader.m; path = View/PLTableHeader.m; sourceTree = "<group>"; };
 		AC5872E914CD4B9B001F77C3 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAParser.h; sourceTree = "<group>"; };
 		AC5872EA14CD4B9B001F77C3 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAParser.m; sourceTree = "<group>"; };
+		ACACC5FB14D7A16E006040F5 /* NSDate+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Formatting.h"; path = "Helper/NSDate+Formatting.h"; sourceTree = "<group>"; };
+		ACACC5FC14D7A16E006040F5 /* NSDate+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Formatting.m"; path = "Helper/NSDate+Formatting.m"; sourceTree = "<group>"; };
 		ACD0CFE014A48E6A004F914E /* PLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLRequest.h; path = Model/PLRequest.h; sourceTree = "<group>"; };
 		ACD0CFE114A48E6A004F914E /* PLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLRequest.m; path = Model/PLRequest.m; sourceTree = "<group>"; };
 		BD1C8F0914A6B277005DAE02 /* PLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLParser.h; path = Model/PLParser.h; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 				BD2F2B4F14D2B2CF00B4A6D1 /* PLImageHelper.m */,
 				BD2F2B6014D2F14F00B4A6D1 /* PLLabelHelper.h */,
 				BD2F2B6114D2F14F00B4A6D1 /* PLLabelHelper.m */,
+				ACACC5FB14D7A16E006040F5 /* NSDate+Formatting.h */,
+				ACACC5FC14D7A16E006040F5 /* NSDate+Formatting.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -605,6 +610,7 @@
 				BD2F2B6214D2F14F00B4A6D1 /* PLLabelHelper.m in Sources */,
 				BD2F2B6514D2F31200B4A6D1 /* PLPhenomButton.m in Sources */,
 				BD2F2B6814D3065400B4A6D1 /* PLPhenomController.m in Sources */,
+				ACACC5FD14D7A16E006040F5 /* NSDate+Formatting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
