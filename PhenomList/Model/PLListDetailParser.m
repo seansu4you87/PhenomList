@@ -29,10 +29,15 @@
 
 - (void) didStartElement:(NSString*)theElement attributes:(NSDictionary*)theAttributeDict
 {
-    if ([theElement isEqualToString:@"person"])
+    if ( [theElement isEqualToString:@"person"] )
     {
         current_phenom = [[PLPhenom alloc] init];
     }
+	
+	if ( [theElement isEqualToString:@"iframe"] )
+	{
+		current_phenom.videoURL = [[NSURL alloc] initWithString:[theAttributeDict objectForKey:@"src"]];
+	}
 }
 
 - (void) didEndElement:(NSString*)theElement content:(NSString*)theContent
@@ -65,8 +70,17 @@
     if ( [theElement isEqualToString:@"lead"] )
         current_phenom.lead = theContent;
         
+	if ( [theElement isEqualToString:@"stats"] )
+	{
+		
+	}
+	
+	if ( [theElement isEqualToString:@"picture-url"] )
+		current_phenom.imageURL = [[NSURL alloc] initWithString:theContent];
+	
     if ( [theElement isEqualToString:@"person"] )
         [list.phenoms addObject:current_phenom];
+		
     
 //    if ( [theElement isEqualToString:@"created-at"] )
         

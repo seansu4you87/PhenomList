@@ -32,7 +32,7 @@ PLApplicationData *appData;
 {
     if (self = [super init])
     {
-        
+		cache = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -56,7 +56,7 @@ PLApplicationData *appData;
         return;
     }
     
-    PLRequest *request = [[PLRequest alloc] initWithURL:[PLUrlHelper listsUrl] andParserClass:[PLListParser class]];
+    PLRequest *request = [[PLRequest alloc] initWithUrl:[PLUrlHelper listsUrl] andParserClass:[PLListParser class]];
     [request performRequestWithSuccessBlock:^(id result){
         
         lists = result;
@@ -73,7 +73,7 @@ PLApplicationData *appData;
         return;
     }
     
-    PLRequest *request = [[PLRequest alloc] initWithURL:[PLUrlHelper listDetailUrlForListId:list.uid] andParserClass:[PLListDetailParser class]];
+    PLRequest *request = [[PLRequest alloc] initWithUrl:[PLUrlHelper listDetailUrlForListId:list.uid] andParserClass:[PLListDetailParser class]];
     [request performRequestWithSuccessBlock:^(id result){
         
         PLList *resultList = (PLList *)result;
@@ -84,6 +84,24 @@ PLApplicationData *appData;
         successBlock(cachedList);
         
     }andFailureBlock:failureBlock];
+}
+
+- (void)getDataForUrl:(NSURL *)url successBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock
+{
+	id cachedData = [cache objectForKey:[url absoluteString]];
+	if (cachedData)
+	{
+		successBlock(cachedData);
+		return;
+	}
+	
+	PLRequest *request = [[PLRequest alloc] initWithUrl:url];
+	[request performRequestWithSuccessBlock:^(id result){
+		
+		[cache setObject:result forKey:[url absoluteString]];
+		successBlock(result);
+		
+	}andFailureBlock:failureBlock];
 }
 
 @end

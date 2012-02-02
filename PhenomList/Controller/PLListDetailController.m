@@ -15,6 +15,7 @@
 
 #import "PLListDetailView.h"
 #import "PLPhenomButton.h"
+#import "PLImageView.h"
 
 @interface PLListDetailController (private)
 
@@ -50,8 +51,11 @@
     
     detail_view = [[PLListDetailView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     self.view = detail_view;
-    
-    [self setData];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[self setData];
 }
 
 #pragma mark - 
@@ -79,6 +83,10 @@
         
         [button setTitle:phenom.name forState:UIControlStateNormal];
         [button addTarget:self action:@selector(phenomButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+		
+		PLImageView *imageView = [[PLImageView alloc] initWithImageUrl:phenom.imageURL];
+		imageView.frame = CGRectMake(0, 0, 50, 50);
+		[button addSubview:imageView];
     }
 }
 

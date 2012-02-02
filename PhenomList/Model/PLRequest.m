@@ -13,11 +13,19 @@
 
 @implementation PLRequest
 
-- (id)initWithURL:(PLUrlHelper *)url andParserClass:(Class)parserClass
+- (id)initWithUrl:(NSURL *)url
 {
 	if (self = [super init])
 	{
 		url_request = [[NSMutableURLRequest alloc] initWithURL:url];
+	}
+	return self;
+}
+
+- (id)initWithUrl:(NSURL *)url andParserClass:(Class)parserClass
+{
+	if (self = [self initWithUrl:url])
+	{
         parser_class = parserClass;
 	}
 	return self;
@@ -63,13 +71,21 @@
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-	//NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-    
-    PLParser *parser = [[parser_class alloc] initWithData:data];
-    [parser parse];
-    
-    if (success_block)
-        success_block(parser.data);
+	id returnData = nil;
+	if (parser_class)
+	{
+		PLParser *parser = [[parser_class alloc] initWithData:data];
+		[parser parse];
+		
+		returnData = parser.data;
+	}
+	else 
+	{
+		returnData = data;
+	}
+	
+	if (success_block)
+		success_block(returnData);
 }
 
 @end

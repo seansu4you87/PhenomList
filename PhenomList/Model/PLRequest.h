@@ -18,8 +18,6 @@ typedef enum
 typedef void (^PLRequestSuccessBlock)(id); 
 typedef void (^PLRequestFailureBlock)(NSError *); 
 
-@class PLUrlHelper;
-
 @interface PLRequest : NSObject
 {
 	NSURLConnection			*url_connection;
@@ -31,7 +29,8 @@ typedef void (^PLRequestFailureBlock)(NSError *);
     Class                   parser_class;
 }
 
-- (id)initWithURL:(PLUrlHelper *)url andParserClass:(Class)parserClass;
+- (id)initWithUrl:(NSURL *)url;
+- (id)initWithUrl:(NSURL *)url andParserClass:(Class)parserClass;
 - (void)performRequestWithSuccessBlock:(PLRequestSuccessBlock)successBlock andFailureBlock:(PLRequestFailureBlock)failureBlock;
 
 @end

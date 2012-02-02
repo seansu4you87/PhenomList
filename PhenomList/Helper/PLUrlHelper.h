@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PLUrlHelper : NSURL
+@interface PLUrlHelper : NSObject
 
-+ (PLUrlHelper *)listsUrl;
-+ (PLUrlHelper *)listDetailUrlForListId:(NSInteger)uid;
++ (NSURL *)listsUrl;
++ (NSURL *)listDetailUrlForListId:(NSInteger)uid;
 
 @end
