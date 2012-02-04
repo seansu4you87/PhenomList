@@ -15,6 +15,8 @@
     UILabel *title_label;
     UILabel *summary_label;
     
+    CGFloat image_width;
+    
     NSArray *phenom_buttons;
 }
 

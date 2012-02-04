@@ -89,7 +89,7 @@
 
 - (CGFloat)heightForDataRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 80;
 }
 
 - (void)didSelectDataRowAtIndexPath:(NSIndexPath *)indexPath

@@ -23,13 +23,16 @@
 	if (self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"])
 	{
         
-        image_width = 60;
+        image_width = 80;
         
         // Set title
         self.textLabel.text = title;
+        self.textLabel.backgroundColor = [UIColor clearColor];
+        self.textLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
 		
 		// Set subtitle
 		self.detailTextLabel.text = subtitle;
+        self.detailTextLabel.backgroundColor = [UIColor clearColor];
         
         // Make Multiline
         self.textLabel.numberOfLines = 2;
@@ -76,17 +79,28 @@
 		 make the label 20 pixels high
          */
         
-		frame = CGRectMake(boundsX + image_width, 0, self.frame.size.width - (image_width + 10), self.frame.size.height / 2.0);
+		frame = CGRectMake(
+                           boundsX + image_width, 
+                           7, 
+                           self.frame.size.width - (image_width + 10), 
+                           self.frame.size.height / 2.0
+                        );
+        
 		self.textLabel.frame = frame;
 		
-		self.detailTextLabel.frame = CGRectMake(frame.origin.x, CGRectGetMaxY(frame) + 10, frame.size.width, frame.size.height);
+		self.detailTextLabel.frame = CGRectMake(
+                                                frame.origin.x, 
+                                                CGRectGetMaxY(frame) + (CGRectGetMaxY(frame)/4.5), 
+                                                frame.size.width, 
+                                                self.frame.size.height / 4.0
+                                            );
 	}
 }
 
 - (void)setColorsForActive:(BOOL)active
 {
-    self.textLabel.shadowColor = active ? [UIColor darkGrayColor] : [UIColor whiteColor];;
-    self.textLabel.shadowOffset = active ? CGSizeMake(0, -0.5) : CGSizeMake(0, 0.5);
+    self.textLabel.shadowColor = self.detailTextLabel.shadowColor = active ? [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5] : [UIColor whiteColor];
+    self.textLabel.shadowOffset = self.detailTextLabel.shadowOffset = active ? CGSizeMake(0, 1) : CGSizeMake(0, 1);
 }
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animate
