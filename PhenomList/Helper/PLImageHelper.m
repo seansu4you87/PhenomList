@@ -40,6 +40,11 @@
     return [UIImage imageNamed:@"PLTableHeaderImage.png"];
 }
 
++ (UIImage *)largePhotoFrame
+{
+    return [UIImage imageNamed:@"PhotoFrameLarge.png"];
+}
+
 + (UIImage *)loadingImageForIndex:(NSInteger)i
 {
     NSString *numString = (i < 10) ? @"0%i" : @"%i";

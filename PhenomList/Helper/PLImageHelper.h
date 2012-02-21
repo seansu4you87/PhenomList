@@ -16,6 +16,7 @@
 + (UIImage *)listCellSelectedImage;
 + (UIImage *)tableFooterImage;
 + (UIImage *)tableHeaderImage;
++ (UIImage *)largePhotoFrame;
 + (UIImage *)loadingImageForIndex:(NSInteger)i;
 
 @end

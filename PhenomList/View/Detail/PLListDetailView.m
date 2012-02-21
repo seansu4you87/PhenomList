@@ -11,6 +11,8 @@
 #import "PLTableHeader.h"
 #import "PLTableFooter.h"
 
+#import "PLLargePhotoArray.h"
+
 #import "PLImageHelper.h"
 #import "PLLabelHelper.h"
 
@@ -70,6 +72,11 @@
         
         [self addSubview:title_label];
         [self addSubview:summary_label];
+        
+        UIView *photoArray = [[PLLargePhotoArray alloc] initWithImages:[NSArray arrayWithObjects:@"test", nil]];
+        photoArray.frame = CGRectMake(20, 20, 80, 80);
+
+        [self addSubview:photoArray];
         
 
         [self createPhenomButtons];

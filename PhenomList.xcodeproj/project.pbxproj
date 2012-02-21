@@ -13,6 +13,8 @@
 		5948E2AF14C2A6D000E9ADEA /* PLTableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */; };
 		59CC14ED14CA101F00775109 /* PLTableCellSelection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */; };
 		59CC14FA14CA1A4400775109 /* PLTableHeaderImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */; };
+		59E98C5414F2BE7600F429B4 /* PhotoFrameLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E98C5314F2BE7600F429B4 /* PhotoFrameLarge@2x.png */; };
+		59E98C5814F2BF5100F429B4 /* PLLargePhotoArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E98C5714F2BF5100F429B4 /* PLLargePhotoArray.m */; };
 		AC5872EB14CD4B9B001F77C3 /* HBAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5872EA14CD4B9B001F77C3 /* HBAParser.m */; };
 		ACACC5FD14D7A16E006040F5 /* NSDate+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5FC14D7A16E006040F5 /* NSDate+Formatting.m */; };
 		ACD0CFE214A48E6A004F914E /* PLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD0CFE114A48E6A004F914E /* PLRequest.m */; };
@@ -101,6 +103,9 @@
 		5948E2AB14C2A6D000E9ADEA /* PLTableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCell@2x.png"; sourceTree = "<group>"; };
 		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
 		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
+		59E98C5314F2BE7600F429B4 /* PhotoFrameLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoFrameLarge@2x.png"; sourceTree = "<group>"; };
+		59E98C5614F2BF5100F429B4 /* PLLargePhotoArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLargePhotoArray.h; sourceTree = "<group>"; };
+		59E98C5714F2BF5100F429B4 /* PLLargePhotoArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLargePhotoArray.m; sourceTree = "<group>"; };
 		AC5872E914CD4B9B001F77C3 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAParser.h; sourceTree = "<group>"; };
 		AC5872EA14CD4B9B001F77C3 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAParser.m; sourceTree = "<group>"; };
 		ACACC5FB14D7A16E006040F5 /* NSDate+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Formatting.h"; path = "Helper/NSDate+Formatting.h"; sourceTree = "<group>"; };
@@ -236,6 +241,7 @@
 				BD2F2B0814D29DDB00B4A6D1 /* PLLoading_03@2x.png */,
 				BD2F2B0914D29DDB00B4A6D1 /* PLLoading_04@2x.png */,
 				BD2F2B0A14D29DDB00B4A6D1 /* PLLoading_05@2x.png */,
+				59E98C5314F2BE7600F429B4 /* PhotoFrameLarge@2x.png */,
 				BD2F2B0B14D29DDB00B4A6D1 /* PLLoading_06@2x.png */,
 				BD2F2B0C14D29DDB00B4A6D1 /* PLLoading_07@2x.png */,
 				BD2F2B0D14D29DDB00B4A6D1 /* PLLoading_08@2x.png */,
@@ -335,6 +341,8 @@
 				BD3CEB9014EE3BB0009F1244 /* PLListDetailView.m */,
 				BD3CEB9114EE3BB0009F1244 /* PLPhenomButton.h */,
 				BD3CEB9214EE3BB0009F1244 /* PLPhenomButton.m */,
+				59E98C5614F2BF5100F429B4 /* PLLargePhotoArray.h */,
+				59E98C5714F2BF5100F429B4 /* PLLargePhotoArray.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -579,6 +587,7 @@
 				BD2F2B4314D29DDB00B4A6D1 /* PLTableFooterImage.png in Resources */,
 				BD2F2B4414D29DDB00B4A6D1 /* PLTableFooterImage@2x.png in Resources */,
 				BD2F2B4514D29DDB00B4A6D1 /* PLTableHeaderImage.png in Resources */,
+				59E98C5414F2BE7600F429B4 /* PhotoFrameLarge@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +650,7 @@
 				BD3CEBA614EE3BB0009F1244 /* PLLogo.m in Sources */,
 				BD3CEBA714EE3BB0009F1244 /* PLTableFooter.m in Sources */,
 				BD3CEBA814EE3BB0009F1244 /* PLTableHeader.m in Sources */,
+				59E98C5814F2BF5100F429B4 /* PLLargePhotoArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
