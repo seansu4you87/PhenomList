@@ -73,11 +73,9 @@
         [self addSubview:title_label];
         [self addSubview:summary_label];
         
-        UIView *photoArray = [[PLLargePhotoArray alloc] initWithImages:[NSArray arrayWithObjects:@"test", nil]];
-        photoArray.frame = CGRectMake(20, 20, 80, 80);
+        photo_array = [[PLLargePhotoArray alloc] initWithImages:[NSArray arrayWithObjects:@"test", nil]];
 
-        [self addSubview:photoArray];
-        
+        [self addSubview:photo_array];
 
         [self createPhenomButtons];
     }
@@ -107,6 +105,7 @@
     phenom_buttons = [NSArray arrayWithArray:muta];
 }
 
+
 - (void)layoutSubviews
 {
     CGFloat x_margin = 10;
@@ -116,7 +115,7 @@
     //CGSize titleSize = [PLLabelHelper sizeForTextInLabel:title_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
     title_label.frame = CGRectMake(x_margin + image_width + 15, CGRectGetMaxY(header.frame) + y_margin, self.frame.size.width - (x_margin + image_width + 15), 90);
     
-    
+    photo_array.frame = CGRectMake(x_margin, CGRectGetMaxX(header.frame) + y_margin, image_width, image_width);
     
     
     CGSize summarySize = [PLLabelHelper sizeForTextInLabel:summary_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class PLPhenomButton;
+@class PLLargePhotoArray;
 
 @interface PLListDetailView : UIScrollView
 {
@@ -18,6 +19,8 @@
     CGFloat image_width;
     
     NSArray *phenom_buttons;
+    
+    PLLargePhotoArray *photo_array;
 }
 
 @property(nonatomic, assign) NSString *title;
