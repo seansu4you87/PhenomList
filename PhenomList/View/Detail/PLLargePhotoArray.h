@@ -10,6 +10,6 @@
 
 @interface PLLargePhotoArray : UIView
 
--(id)initWithImages: (NSArray *)photos;
+-(id)initWithURLs: (NSArray *)photos;
 
 @end

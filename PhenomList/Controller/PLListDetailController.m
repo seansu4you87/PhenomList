@@ -75,6 +75,7 @@
 {
     detail_view.title = list.title;
     detail_view.summary = list.summary;
+    photoArray = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < [list.phenoms count]; i++)
     {
@@ -87,6 +88,9 @@
 		PLImageView *imageView = [[PLImageView alloc] initWithImageUrl:phenom.imageURL];
 		imageView.frame = CGRectMake(0, 0, 50, 50);
 		[button addSubview:imageView];
+        
+        //Make this array for init function
+        [photoArray addObject:phenom.imageURL]; 
     }
 }
 

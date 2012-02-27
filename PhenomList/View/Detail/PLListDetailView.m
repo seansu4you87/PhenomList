@@ -73,7 +73,7 @@
         [self addSubview:title_label];
         [self addSubview:summary_label];
         
-        photo_array = [[PLLargePhotoArray alloc] initWithImages:[NSArray arrayWithObjects:@"test", nil]];
+        photo_array = [[PLLargePhotoArray alloc] initWithURLs:[NSArray arrayWithObjects:@"test", @"test", @"test", @"test", @"test", nil]];
 
         [self addSubview:photo_array];
 
@@ -115,8 +115,7 @@
     //CGSize titleSize = [PLLabelHelper sizeForTextInLabel:title_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
     title_label.frame = CGRectMake(x_margin + image_width + 15, CGRectGetMaxY(header.frame) + y_margin, self.frame.size.width - (x_margin + image_width + 15), 90);
     
-    photo_array.frame = CGRectMake(x_margin, CGRectGetMaxX(header.frame) + y_margin, image_width, image_width);
-    
+    photo_array.frame = CGRectMake(x_margin, CGRectGetMaxX(header.frame)-20, 80, 80);    
     
     CGSize summarySize = [PLLabelHelper sizeForTextInLabel:summary_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
     summary_label.frame = CGRectMake(x_margin, CGRectGetMaxY(title_label.frame) + y_margin + 10, summarySize.width, summarySize.height);

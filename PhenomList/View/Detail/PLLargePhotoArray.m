@@ -15,21 +15,40 @@
 #pragma mark - View lifecycle
 
 //initWithImageUrls:
--(id)initWithImages: (NSArray *)photos
+-(id)initWithURLs: (NSArray *)photos
 {
     if (self = [super initWithFrame:CGRectZero] )
 	{
-        for (int i = 0; i < [photos count]; i++)
+        
+        for (int i = [photos count]; i > 0; i--)
         {
-            NSString *imageURL = [photos objectAtIndex:i];
+            NSString *imageURL = [photos objectAtIndex:(i-1)];
             
-            //TODO:make it an imageview.  
+            UIImageView *photoFrameView =  [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+            //photoFrameView.backgroundColor = [UIColor colorWithPatternImage:[PLImageHelper largePhotoFrame]];
             
-            UIView *photoFrameView =  [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-            photoFrameView.backgroundColor = [UIColor colorWithPatternImage:[PLImageHelper largePhotoFrame]];
+            photoFrameView.image = [PLImageHelper largePhotoFrame];
             
-            photoFrameView.transform = CGAffineTransformMakeRotation(M_PI / 18.0);
-            
+            switch (i) {
+                case 5:
+                photoFrameView.transform = CGAffineTransformMakeRotation(M_PI / 36.0);
+                break;
+
+                case 4:
+                photoFrameView.transform = CGAffineTransformMakeRotation(M_PI / -36.0);
+                break;
+
+                case 3:
+                photoFrameView.transform = CGAffineTransformMakeRotation(M_PI / 18.0);
+                break;
+
+                case 2:
+                photoFrameView.transform = CGAffineTransformMakeRotation(M_PI / -18.0);
+                break;
+
+            }
+             
+             
             [self addSubview:photoFrameView];
         }
     }
