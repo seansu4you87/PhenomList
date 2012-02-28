@@ -75,7 +75,8 @@
 {
     detail_view.title = list.title;
     detail_view.summary = list.summary;
-    photoArray = [[NSMutableArray alloc] init];
+    
+    NSMutableArray *imageUrls = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < [list.phenoms count]; i++)
     {
@@ -90,8 +91,10 @@
 		[button addSubview:imageView];
         
         //Make this array for init function
-        [photoArray addObject:phenom.imageURL]; 
+        [imageUrls addObject:phenom.imageURL]; 
     }
+    
+     //[detail_view setImageUrls:imageUrls];
 }
 
 #pragma mark - 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class PLPhenomButton;
-@class PLLargePhotoArray;
+@class PLLargePhotoArrayView;
 
 @interface PLListDetailView : UIScrollView
 {
@@ -20,12 +20,14 @@
     
     NSArray *phenom_buttons;
     
-    PLLargePhotoArray *photo_array;
+    PLLargePhotoArrayView *photo_array_view;
 }
 
 @property(nonatomic, assign) NSString *title;
 @property(nonatomic, assign) NSString *summary;
 
 - (PLPhenomButton *)buttonAtIndex:(NSInteger)index;
+
+- (void)setImageUrls:(NSArray *)imageUrls;
 
 @end

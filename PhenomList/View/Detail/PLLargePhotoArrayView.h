@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PLLargePhotoArray : UIView
+@interface PLLargePhotoArrayView : UIView
 
 -(id)initWithURLs: (NSArray *)photos;
 

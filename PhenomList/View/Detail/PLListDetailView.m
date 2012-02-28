@@ -11,7 +11,7 @@
 #import "PLTableHeader.h"
 #import "PLTableFooter.h"
 
-#import "PLLargePhotoArray.h"
+#import "PLLargePhotoArrayView.h"
 
 #import "PLImageHelper.h"
 #import "PLLabelHelper.h"
@@ -73,9 +73,9 @@
         [self addSubview:title_label];
         [self addSubview:summary_label];
         
-        photo_array = [[PLLargePhotoArray alloc] initWithURLs:[NSArray arrayWithObjects:@"test", @"test", @"test", @"test", @"test", nil]];
+        photo_array_view = [[PLLargePhotoArrayView alloc] initWithURLs:[NSArray arrayWithObjects:@"test", @"test", @"test", @"test", @"test", nil]];
 
-        [self addSubview:photo_array];
+        [self addSubview:photo_array_view];
 
         [self createPhenomButtons];
     }
@@ -115,7 +115,7 @@
     //CGSize titleSize = [PLLabelHelper sizeForTextInLabel:title_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
     title_label.frame = CGRectMake(x_margin + image_width + 15, CGRectGetMaxY(header.frame) + y_margin, self.frame.size.width - (x_margin + image_width + 15), 90);
     
-    photo_array.frame = CGRectMake(x_margin, CGRectGetMaxX(header.frame)-20, 80, 80);    
+    photo_array_view.frame = CGRectMake(x_margin, CGRectGetMaxX(header.frame)-20, 80, 80);    
     
     CGSize summarySize = [PLLabelHelper sizeForTextInLabel:summary_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
     summary_label.frame = CGRectMake(x_margin, CGRectGetMaxY(title_label.frame) + y_margin + 10, summarySize.width, summarySize.height);
@@ -146,6 +146,11 @@
 
 #pragma mark - 
 #pragma mark Setters and Getters
+
+- (void)setImageUrls:(NSArray *)imageUrls
+{
+    //photo_array_view.imageUrls = imageUrls;
+}
 
 - (NSString *)title
 {

@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Blackboard Mobile. All rights reserved.
 //
 
-#import "PLLargePhotoArray.h"
+#import "PLLargePhotoArrayView.h"
 #import "PLImageHelper.h"
 
-@implementation PLLargePhotoArray
+@implementation PLLargePhotoArrayView
 
 
 #pragma mark - View lifecycle

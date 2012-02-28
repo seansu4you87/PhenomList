@@ -16,8 +16,6 @@
     PLList *list;
     
     PLListDetailView *detail_view;
-    
-    NSMutableArray *photoArray;
 }
 
 @property(nonatomic, readonly) UIScrollView *scrollView;
