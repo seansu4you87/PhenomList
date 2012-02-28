@@ -13,7 +13,7 @@
     CGRect buttonFrame;
     
     NSURL *imageUrl;
-    UIImageView *imageView;
+    UIView *imageView;
     
     NSString *phenomName;
     UILabel *phenomLabel;

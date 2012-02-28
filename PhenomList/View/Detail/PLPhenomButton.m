@@ -55,6 +55,7 @@
     
     phenomLabel = [[UILabel alloc] initWithFrame:CGRectMake(4, 4, blackBar.frame.size.width - 40, blackBar.frame.size.height)];
     phenomLabel.textColor = [UIColor whiteColor];
+    phenomLabel.backgroundColor = [UIColor clearColor];
     phenomLabel.textAlignment = UITextAlignmentLeft;
     
     [blackBar addSubview:phenomLabel];
@@ -94,6 +95,13 @@
         //self.titleLabel.numberOfLines = 2;
     }
     return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    phenomLabel.frame = (CGRect){0, 0, self.frame.size.width, 20};
 }
 
 -(void)setImage_url:(NSURL *)image_url

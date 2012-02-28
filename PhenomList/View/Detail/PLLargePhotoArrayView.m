@@ -8,6 +8,7 @@
 
 #import "PLLargePhotoArrayView.h"
 #import "PLImageHelper.h"
+#import "PLPhotoFrameImageView.h"
 
 @implementation PLLargePhotoArrayView
 @synthesize imageUrls = image_Urls;
@@ -19,6 +20,7 @@
 {
     if (self = [super initWithFrame:CGRectZero] )
 	{
+        imageViews = [[NSMutableArray alloc] init];
         for (int i = [photos count]; i > 0; i--)
         {
             NSString *imageURL = [photos objectAtIndex:(i-1)];
@@ -49,6 +51,7 @@
              
              
             [self addSubview:photoFrameView];
+            [imageViews addObject:photoFrameView];
         }
     }
     return self;
@@ -63,6 +66,11 @@
 -(void)setImageUrls:(NSMutableArray *)imageUrls
 {
   //run for loop method from here??  
+
+    for (PLPhotoFrameImageView *view in imageViews)
+    {
+        view.image = [UIImage imageNamed:@"my bs image"];
+    }
 }
 
 @end

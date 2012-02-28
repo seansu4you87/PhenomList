@@ -11,6 +11,7 @@
 @interface PLLargePhotoArrayView : UIView
 {
     NSMutableArray *image_Urls;
+    NSMutableArray *imageViews;
 }
 
 @property(nonatomic, strong) NSMutableArray *imageUrls;

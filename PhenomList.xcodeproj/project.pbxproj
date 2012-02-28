@@ -70,6 +70,7 @@
 		BD3CEBA614EE3BB0009F1244 /* PLLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEB9C14EE3BB0009F1244 /* PLLogo.m */; };
 		BD3CEBA714EE3BB0009F1244 /* PLTableFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEB9E14EE3BB0009F1244 /* PLTableFooter.m */; };
 		BD3CEBA814EE3BB0009F1244 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEBA014EE3BB0009F1244 /* PLTableHeader.m */; };
+		BD8C5D6B14FD575800571A9D /* PLPhotoFrameImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8C5D6A14FD575800571A9D /* PLPhotoFrameImageView.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
 		BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
 		BDE62B9B14A273F8003423CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9A14A273F8003423CA /* CoreGraphics.framework */; };
@@ -104,7 +105,7 @@
 		59CC14EC14CA101F00775109 /* PLTableCellSelection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableCellSelection@2x.png"; sourceTree = "<group>"; };
 		59CC14F914CA1A4400775109 /* PLTableHeaderImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLTableHeaderImage@2x.png"; sourceTree = "<group>"; };
 		59E98C5314F2BE7600F429B4 /* PhotoFrameLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoFrameLarge@2x.png"; sourceTree = "<group>"; };
-		59E98C5614F2BF5100F429B4 /* PLLargePhotoArrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = PLLargePhotoArrayView.h; sourceTree = "<group>"; };
+		59E98C5614F2BF5100F429B4 /* PLLargePhotoArrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLargePhotoArrayView.h; sourceTree = "<group>"; };
 		59E98C5714F2BF5100F429B4 /* PLLargePhotoArrayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLargePhotoArrayView.m; sourceTree = "<group>"; };
 		AC5872E914CD4B9B001F77C3 /* HBAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAParser.h; sourceTree = "<group>"; };
 		AC5872EA14CD4B9B001F77C3 /* HBAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAParser.m; sourceTree = "<group>"; };
@@ -184,6 +185,8 @@
 		BD3CEB9E14EE3BB0009F1244 /* PLTableFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableFooter.m; sourceTree = "<group>"; };
 		BD3CEB9F14EE3BB0009F1244 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableHeader.h; sourceTree = "<group>"; };
 		BD3CEBA014EE3BB0009F1244 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableHeader.m; sourceTree = "<group>"; };
+		BD8C5D6914FD575800571A9D /* PLPhotoFrameImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPhotoFrameImageView.h; sourceTree = "<group>"; };
+		BD8C5D6A14FD575800571A9D /* PLPhotoFrameImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPhotoFrameImageView.m; sourceTree = "<group>"; };
 		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE62B9614A273F8003423CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDE62B9814A273F8003423CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -343,6 +346,8 @@
 				BD3CEB9214EE3BB0009F1244 /* PLPhenomButton.m */,
 				59E98C5614F2BF5100F429B4 /* PLLargePhotoArrayView.h */,
 				59E98C5714F2BF5100F429B4 /* PLLargePhotoArrayView.m */,
+				BD8C5D6914FD575800571A9D /* PLPhotoFrameImageView.h */,
+				BD8C5D6A14FD575800571A9D /* PLPhotoFrameImageView.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 				BD3CEBA714EE3BB0009F1244 /* PLTableFooter.m in Sources */,
 				BD3CEBA814EE3BB0009F1244 /* PLTableHeader.m in Sources */,
 				59E98C5814F2BF5100F429B4 /* PLLargePhotoArrayView.m in Sources */,
+				BD8C5D6B14FD575800571A9D /* PLPhotoFrameImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
