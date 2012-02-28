@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface PLLargePhotoArrayView : UIView
+{
+    NSMutableArray *image_Urls;
+}
+
+@property(nonatomic, strong) NSMutableArray *imageUrls;
 
 -(id)initWithURLs: (NSArray *)photos;
 

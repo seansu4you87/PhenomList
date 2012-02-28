@@ -10,7 +10,7 @@
 #import "PLImageHelper.h"
 
 @implementation PLLargePhotoArrayView
-
+@synthesize imageUrls = image_Urls;
 
 #pragma mark - View lifecycle
 
@@ -19,7 +19,6 @@
 {
     if (self = [super initWithFrame:CGRectZero] )
 	{
-        
         for (int i = [photos count]; i > 0; i--)
         {
             NSString *imageURL = [photos objectAtIndex:(i-1)];
@@ -60,6 +59,10 @@
 {
 }
 
-
+//Setter
+-(void)setImageUrls:(NSMutableArray *)imageUrls
+{
+  //run for loop method from here??  
+}
 
 @end

@@ -94,7 +94,7 @@
         [imageUrls addObject:phenom.imageURL]; 
     }
     
-     //[detail_view setImageUrls:imageUrls];
+     [detail_view setImageUrls:imageUrls];
 }
 
 #pragma mark - 

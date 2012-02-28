@@ -147,9 +147,9 @@
 #pragma mark - 
 #pragma mark Setters and Getters
 
-- (void)setImageUrls:(NSArray *)imageUrls
+- (void)setImageUrls:(NSMutableArray *)imageUrls
 {
-    //photo_array_view.imageUrls = imageUrls;
+    photo_array_view.imageUrls = imageUrls;
 }
 
 - (NSString *)title
