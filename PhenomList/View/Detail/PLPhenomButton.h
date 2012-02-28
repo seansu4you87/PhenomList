@@ -12,7 +12,7 @@
 {
     CGRect buttonFrame;
     
-    NSString *imageUrl;
+    NSURL *imageUrl;
     UIImageView *imageView;
     
     NSString *phenomName;
@@ -23,7 +23,7 @@
 }
 @property(nonatomic, assign) CGRect button_frame;
 
-@property(nonatomic, retain) NSString *image_url;
+@property(nonatomic, retain) NSURL *image_url;
 @property(nonatomic, retain) NSString *phenom_name;
 @property(nonatomic, retain) NSString *agree_number;
 

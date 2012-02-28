@@ -9,6 +9,7 @@
 #import "PLPhenomButton.h"
 
 #import "PLImageHelper.h"
+#import "PLImageView.h"
 
 @implementation PLPhenomButton
 
@@ -27,13 +28,49 @@
     return baseView;
 }
 
+-(UIButton *)makeAgreeButton
+{
+    UIButton *agreeButton = [[UIButton alloc] initWithFrame:CGRectMake(-60, self.button_frame.size.width - 70, 50, 50)];
+    agreeButton.backgroundColor = [UIColor orangeColor];
+    
+    UILabel *agreeText = [[UILabel alloc] initWithFrame:CGRectMake(0, (agreeButton.frame.size.height/3) * 2, agreeButton.frame.size.width, agreeButton.frame.size.height/3)];
+    agreeText.text = @"AGREE";
+    agreeText.textAlignment = UITextAlignmentCenter;
+    agreeText.textColor = [UIColor whiteColor];
+    
+    numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, agreeButton.frame.size.width, (agreeButton.frame.size.height/3) * 2)];
+    numberLabel.textAlignment = UITextAlignmentCenter;
+    numberLabel.textColor = [UIColor whiteColor];
+
+    [agreeButton addSubview:agreeText];
+    [agreeButton addSubview:numberLabel];
+    
+    return agreeButton;
+}
+
+-(UIView *)makeBlackBar
+{
+    UIView *blackBar = [[UIView alloc] initWithFrame:CGRectMake(4, 4, self.button_frame.size.width - 8, self.button_frame.size.height - 8)];
+    blackBar.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.7];
+    
+    phenomLabel = [[UILabel alloc] initWithFrame:CGRectMake(4, 4, blackBar.frame.size.width - 40, blackBar.frame.size.height)];
+    phenomLabel.textColor = [UIColor whiteColor];
+    phenomLabel.textAlignment = UITextAlignmentLeft;
+    
+    [blackBar addSubview:phenomLabel];
+    
+    //Make Agree Button
+    [blackBar addSubview:[self makeAgreeButton]];
+
+    return blackBar;
+}
+
 
 - (id)init
 {
     if (self = [super init])
     {
-        //This is erroring, why?
-        //self.button_frame = [CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        self.button_frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         
         [self setBackgroundImage:[PLImageHelper listCellSelectedImage] forState:UIControlStateNormal];
         
@@ -41,32 +78,13 @@
         UIView *baseView = [self makeBaseView];
         
         //Make Image
-        imageView = [[UIImageView alloc] init];
+        imageView = [[UIImageView alloc] initWithFrame:self.button_frame];
         [baseView addSubview:imageView];
         
         
         //Make BlackBar
-        UIView *blackBar = [[UIView alloc] initWithFrame:self.button_frame];
-        blackBar.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.7];
-        
-        phenomLabel = [[UILabel alloc] initWithFrame:self.button_frame];
-        [blackBar addSubview:phenomLabel];
-        [baseView addSubview:blackBar];
-        
-        
-        //Make Agree Button
-        UIButton *agreeButton = [[UIButton alloc] initWithFrame:self.button_frame];
-        UILabel *agreeText = [[UILabel alloc] initWithFrame:self.button_frame];
-        agreeText.text = @"AGREE";
-        agreeText.textAlignment = UITextAlignmentCenter;
-        agreeText.textColor = [UIColor whiteColor];
-        
-        numberLabel = [[UILabel alloc] initWithFrame:self.button_frame];
-        [agreeButton addSubview:agreeText];
-        [agreeButton addSubview:numberLabel];
-        
-        [baseView addSubview:agreeButton];
-        
+        [baseView addSubview:[self makeBlackBar]];
+    
         
         //Add Base to Self
         [self addSubview:baseView];
@@ -78,12 +96,9 @@
     return self;
 }
 
--(void)setImage_url:(NSString *)image_url
+-(void)setImage_url:(NSURL *)image_url
 {
-    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:image_url]];
-    UIImage *image = [[UIImage alloc] initWithData:imageData];
-
-    [self.imageView setImage:image];
+    imageView = [[PLImageView alloc] initWithImageUrl:image_url];
 }
 
 -(void)setPhenom_name:(NSString *)phenom_name
