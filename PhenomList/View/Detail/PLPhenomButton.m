@@ -30,17 +30,25 @@
 
 -(UIButton *)makeAgreeButton
 {
-    UIButton *agreeButton = [[UIButton alloc] initWithFrame:CGRectMake(-60, self.button_frame.size.width - 70, 50, 50)];
-    agreeButton.backgroundColor = [UIColor orangeColor];
+    agreeButton = [[UIButton alloc] initWithFrame:CGRectZero];
+    agreeButton.backgroundColor = [UIColor colorWithRed:245/256.0 green:60/256.0 blue:0 alpha:1];
     
-    UILabel *agreeText = [[UILabel alloc] initWithFrame:CGRectMake(0, (agreeButton.frame.size.height/3) * 2, agreeButton.frame.size.width, agreeButton.frame.size.height/3)];
+    UILabel *agreeText = [[UILabel alloc] initWithFrame:CGRectMake(0,25,50,25)];
     agreeText.text = @"AGREE";
     agreeText.textAlignment = UITextAlignmentCenter;
     agreeText.textColor = [UIColor whiteColor];
+    agreeText.backgroundColor = [UIColor clearColor];
+    agreeText.font = [UIFont systemFontOfSize:11];
     
-    numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, agreeButton.frame.size.width, (agreeButton.frame.size.height/3) * 2)];
+    
+    numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(4,0,42,35)];
     numberLabel.textAlignment = UITextAlignmentCenter;
     numberLabel.textColor = [UIColor whiteColor];
+    numberLabel.backgroundColor = [UIColor clearColor];
+    numberLabel.font = [UIFont boldSystemFontOfSize:20];
+    numberLabel.adjustsFontSizeToFitWidth = YES;
+    numberLabel.text = @"20000";
+
 
     [agreeButton addSubview:agreeText];
     [agreeButton addSubview:numberLabel];
@@ -50,13 +58,14 @@
 
 -(UIView *)makeBlackBar
 {
-    UIView *blackBar = [[UIView alloc] initWithFrame:CGRectMake(4, 4, self.button_frame.size.width - 8, self.button_frame.size.height - 8)];
+    blackBar = [[UIView alloc] initWithFrame:CGRectZero];
     blackBar.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.7];
     
-    phenomLabel = [[UILabel alloc] initWithFrame:CGRectMake(4, 4, blackBar.frame.size.width - 40, blackBar.frame.size.height)];
+    phenomLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     phenomLabel.textColor = [UIColor whiteColor];
     phenomLabel.backgroundColor = [UIColor clearColor];
     phenomLabel.textAlignment = UITextAlignmentLeft;
+    phenomLabel.font = [UIFont boldSystemFontOfSize:14];
     
     [blackBar addSubview:phenomLabel];
     
@@ -72,14 +81,20 @@
     if (self = [super init])
     {
         self.button_frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+        self.backgroundColor = [UIColor whiteColor];
         
-        [self setBackgroundImage:[PLImageHelper listCellSelectedImage] forState:UIControlStateNormal];
+        //TODO: Check if this matters, it's erroring from changing Super Class from UIButton to UIView
+        //[self setBackgroundImage:[PLImageHelper listCellSelectedImage] forState:UIControlStateNormal];
         
         //Make Base
         UIView *baseView = [self makeBaseView];
         
         //Make Image
-        imageView = [[UIImageView alloc] initWithFrame:self.button_frame];
+        imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+
+        //Add test image
+        imageView.image = [UIImage imageNamed:@"test_pic.png"];
+
         [baseView addSubview:imageView];
         
         
@@ -89,6 +104,7 @@
         
         //Add Base to Self
         [self addSubview:baseView];
+        
         
         
         //self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
@@ -101,7 +117,10 @@
 {
     [super layoutSubviews];
     
-    phenomLabel.frame = (CGRect){0, 0, self.frame.size.width, 20};
+    phenomLabel.frame = (CGRect){10, 0, self.frame.size.width, 32};
+    blackBar.frame = (CGRect){0, 0, self.frame.size.width, 32};
+    agreeButton.frame = (CGRect){blackBar.frame.size.width - 60, -11, 50, 50};
+    imageView.frame = (CGRect){2, 2, self.frame.size.width - 4, self.frame.size.height - 4};
 }
 
 -(void)setImage_url:(NSURL *)image_url

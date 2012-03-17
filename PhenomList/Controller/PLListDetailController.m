@@ -83,9 +83,10 @@
         PLPhenom *phenom = [list.phenoms objectAtIndex:i];
         PLPhenomButton *button = [detail_view buttonAtIndex:i];
         
-        [button setTitle:phenom.name forState:UIControlStateNormal];
+        /*[button setTitle:phenom.name forState:UIControlStateNormal];
         [button addTarget:self action:@selector(phenomButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-		
+		*/
+         
 		//PLImageView *imageView = [[PLImageView alloc] initWithImageUrl:phenom.imageURL];
 		//imageView.frame = CGRectMake(0, 0, 50, 50);
 		//[button addSubview:imageView];

@@ -47,7 +47,6 @@
     summary_label.textColor = [UIColor darkTextColor];
     summary_label.shadowColor = [UIColor whiteColor];
     summary_label.shadowOffset = CGSizeMake(0, 1);
-
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -66,7 +65,6 @@
         [self setContentInset:UIEdgeInsetsMake(-header.bounds.size.height, 0.0f, -footer.bounds.size.height, 0.0f)];
         
         image_width = 90;
-        //35
 
         [self initTextStyle];
         
@@ -110,6 +108,7 @@
 {
     CGFloat x_margin = 10;
     CGFloat y_margin = 10;
+    CGFloat button_y_margin = 30;
     CGFloat width = self.bounds.size.width - 2 * x_margin;
     
     //CGSize titleSize = [PLLabelHelper sizeForTextInLabel:title_label withMaxSize:CGSizeMake(width, self.bounds.size.height)];
@@ -130,9 +129,9 @@
     {
         if(i > 0)
         {
-            previous_y = previous_y + button_height +10;
+            previous_y = previous_y + button_height + button_y_margin;
         }else   {
-            previous_y = previous_y +10;
+            previous_y = previous_y + button_y_margin;
         }
         
         PLPhenomButton *button = [phenom_buttons objectAtIndex:i];

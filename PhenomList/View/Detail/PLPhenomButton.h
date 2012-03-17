@@ -8,12 +8,15 @@
 
 
 
-@interface PLPhenomButton : UIButton
+@interface PLPhenomButton : UIView
 {
     CGRect buttonFrame;
     
     NSURL *imageUrl;
-    UIView *imageView;
+    UIImageView *imageView;
+    
+    UIView *blackBar;
+    UIButton *agreeButton;
     
     NSString *phenomName;
     UILabel *phenomLabel;
