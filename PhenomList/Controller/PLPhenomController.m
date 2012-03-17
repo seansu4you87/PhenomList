@@ -9,6 +9,8 @@
 #import "PLPhenomController.h"
 #import "PLPhenom.h"
 
+#import "PLYouTubeWebView.h"
+
 @implementation PLPhenomController
 
 - (id)initWithPhenom:(PLPhenom *)thePhenom
@@ -20,6 +22,12 @@
         self.title = phenom.name;
     }
     return self;
+}
+
+- (void)loadView
+{
+    self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    [self.view addSubview:[[PLYouTubeWebView alloc] initWithFrame:CGRectMake(0, -40, 320, 320)]];
 }
 
 @end

@@ -70,6 +70,8 @@
 		BD3CEBA614EE3BB0009F1244 /* PLLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEB9C14EE3BB0009F1244 /* PLLogo.m */; };
 		BD3CEBA714EE3BB0009F1244 /* PLTableFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEB9E14EE3BB0009F1244 /* PLTableFooter.m */; };
 		BD3CEBA814EE3BB0009F1244 /* PLTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3CEBA014EE3BB0009F1244 /* PLTableHeader.m */; };
+		BD7B52B315142823000A1D67 /* PLYouTubeWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7B52B215142823000A1D67 /* PLYouTubeWebView.m */; };
+		BD7B52B6151433A7000A1D67 /* PLPhenomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7B52B5151433A7000A1D67 /* PLPhenomView.m */; };
 		BD8C5D6B14FD575800571A9D /* PLPhotoFrameImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8C5D6A14FD575800571A9D /* PLPhotoFrameImageView.m */; };
 		BDE62B9714A273F8003423CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9614A273F8003423CA /* UIKit.framework */; };
 		BDE62B9914A273F8003423CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE62B9814A273F8003423CA /* Foundation.framework */; };
@@ -185,6 +187,10 @@
 		BD3CEB9E14EE3BB0009F1244 /* PLTableFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableFooter.m; sourceTree = "<group>"; };
 		BD3CEB9F14EE3BB0009F1244 /* PLTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableHeader.h; sourceTree = "<group>"; };
 		BD3CEBA014EE3BB0009F1244 /* PLTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableHeader.m; sourceTree = "<group>"; };
+		BD7B52B115142823000A1D67 /* PLYouTubeWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLYouTubeWebView.h; sourceTree = "<group>"; };
+		BD7B52B215142823000A1D67 /* PLYouTubeWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLYouTubeWebView.m; sourceTree = "<group>"; };
+		BD7B52B4151433A7000A1D67 /* PLPhenomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPhenomView.h; sourceTree = "<group>"; };
+		BD7B52B5151433A7000A1D67 /* PLPhenomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPhenomView.m; sourceTree = "<group>"; };
 		BD8C5D6914FD575800571A9D /* PLPhotoFrameImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPhotoFrameImageView.h; sourceTree = "<group>"; };
 		BD8C5D6A14FD575800571A9D /* PLPhotoFrameImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPhotoFrameImageView.m; sourceTree = "<group>"; };
 		BDE62B9214A273F8003423CA /* PhenomList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhenomList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,6 +370,10 @@
 		BD3CEB9614EE3BB0009F1244 /* Phenom */ = {
 			isa = PBXGroup;
 			children = (
+				BD7B52B115142823000A1D67 /* PLYouTubeWebView.h */,
+				BD7B52B215142823000A1D67 /* PLYouTubeWebView.m */,
+				BD7B52B4151433A7000A1D67 /* PLPhenomView.h */,
+				BD7B52B5151433A7000A1D67 /* PLPhenomView.m */,
 			);
 			path = Phenom;
 			sourceTree = "<group>";
@@ -657,6 +667,8 @@
 				BD3CEBA814EE3BB0009F1244 /* PLTableHeader.m in Sources */,
 				59E98C5814F2BF5100F429B4 /* PLLargePhotoArrayView.m in Sources */,
 				BD8C5D6B14FD575800571A9D /* PLPhotoFrameImageView.m in Sources */,
+				BD7B52B315142823000A1D67 /* PLYouTubeWebView.m in Sources */,
+				BD7B52B6151433A7000A1D67 /* PLPhenomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
