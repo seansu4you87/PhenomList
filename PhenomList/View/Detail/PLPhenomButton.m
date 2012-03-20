@@ -53,6 +53,8 @@
     [agreeButton addSubview:agreeText];
     [agreeButton addSubview:numberLabel];
     
+    [agreeButton addTarget:self action:@selector(agreeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
     return agreeButton;
 }
 
@@ -105,12 +107,21 @@
         //Add Base to Self
         [self addSubview:baseView];
         
-        
-        
-        //self.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-        //self.titleLabel.numberOfLines = 2;
+//        UITapGestureRecognizer *tapRecongnizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(phenomButtonPressed)];
+//        tapRecongnizer.cancelsTouchesInView = NO;
+//        [self addGestureRecognizer:tapRecongnizer];
     }
     return self;
+}
+
+-(void)phenomButtonPressed
+{
+    NSLog(@"PRESSED");
+}
+
+-(void)agreeButtonPressed
+{
+    NSLog(@"AGREE PRESSED");
 }
 
 - (void)layoutSubviews
